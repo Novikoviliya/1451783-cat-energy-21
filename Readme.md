@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ilya Novikov](https://up.htmlacademy.ru/adaptive/21/user/1451783).
-* Наставник: `Неизвестно`.
+* Наставник: Алина Шаймиева.
 
 ---
 
