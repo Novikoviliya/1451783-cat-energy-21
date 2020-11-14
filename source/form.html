@@ -27,12 +27,12 @@
 
     <main class="page-form">
         <section class="page-form__wrapper container">
-            <h1 class="form__title">Подбор программы</h1>
-            <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+            <h1 class="page-form__title">Подбор программы</h1>
+            <p class="page-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
             <form class="request" action="https://echo.htmlacademy.ru" method="post">
                 <div class="request__info">
-                    <div class="info__write">
-                        <fieldset class="write__field">
+                    <div class="request__write">
+                        <fieldset class="request__field">
                             <label class="form-field">
 <span class="form-field__text">Имя:*</span>
 <input class="form-field__control" type="text" placeholder="Барсик">
@@ -47,8 +47,8 @@
 </label>
                         </fieldset>
                     </div>
-                    <div class="info__write">
-                        <fieldset class="write__field write__field--line">
+                    <div class="request__write">
+                        <fieldset class="request__field request__field--line">
                             <input type="radio" id="radio-1" name="circle" checked>
                             <label class="form-type form-type--radio" for="radio-1" tabindex="0">Похудение</label>
                             <input type="radio" id="radio-2" name="circle">
@@ -59,16 +59,16 @@
                     </div>
                 </div>
 
-                <fieldset class="write__field">
+                <fieldset class="request__field">
                     <h3 class="title-line title-line--bar">Контактные данные (владельца кота)</h3>
                     <div class="request__info">
-                        <div class="info__write">
+                        <div class="request__write">
                             <label class="form-field">
 <span class="form-field__text">E-mail:*</span>
 <input class="form-field__control form-field__control--icon" type="email" placeholder="kuklachev@gmail.com">
 </label>
                         </div>
-                        <div class="info__write">
+                        <div class="request__write">
                             <label class="form-field">
 <span class="form-field__text">Телефон:*</span>
 <input class="form-field__control form-field__control--icon" type="tel" placeholder="8 (960) 900-60-90">
@@ -76,28 +76,28 @@
                         </div>
                     </div>
                 </fieldset>
-                <div class="write__field">
+                <div class="request__field">
                     <label class="title-line title-line--stripe" for="story">Комментарий
 </label>
                     <textarea class="write__textarea" rows="10" id="story" placeholder="Расскажите обо всех повАдках кота"></textarea>
                 </div>
 
-                <fieldset class="write__field">
+                <fieldset class="request__field">
                     <h3 class="title-line title-line--stria">Дополнительно</h3>
                     <div class="request__info">
-                        <div class="info__write info__write--down">
+                        <div class="request__write request__write--down">
                             <input type="checkbox" id="tick-1" checked>
                             <label class="form-type form-type--checkbox" for="tick-1" tabindex="0">сахарозаменитель</label>
                         </div>
-                        <div class="info__write info__write--down">
+                        <div class="request__write request__write--down">
                             <input type="checkbox" id="tick-2" checked>
                             <label class="form-type form-type--checkbox" for="tick-2" tabindex="0">питьевая вода</label>
                         </div>
-                        <div class="info__write info__write--down">
+                        <div class="request__write request__write--down">
                             <input type="checkbox" id="tick-3" checked>
                             <label class="form-type form-type--checkbox" for="tick-3" tabindex="0">молоко</label>
                         </div>
-                        <div class="info__write info__write--down">
+                        <div class="request__write request__write--down">
                             <input type="checkbox" id="tick-4" checked>
                             <label class="form-type form-type--checkbox" for="tick-4" tabindex="0">витамины</label>
                         </div>
@@ -105,10 +105,10 @@
                 </fieldset>
 
                 <div class="request__info">
-                    <div class="info__write info__write--position">
+                    <div class="request__write request__write--position">
                         <button class="button request__button">отправить заявку</button>
                     </div>
-                    <div class="info__write info__write--position">
+                    <div class="request__write request__write--position">
                         <p class="request__text">* — Обязательные поля</p>
                     </div>
                 </div>
@@ -134,8 +134,8 @@
                     <img src="https://via.placeholder.com/150x150" alt="Cat Energy логотип" width="150" height="150">
                 </a>
             </div>
-            <div class="page-footer__intro-social">
-                <ul class="page-footer__social">
+            <div class="page-footer__intro-social social">
+                <ul class="social__list">
                     <li class="social__item">
                         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
                     </li>
@@ -147,7 +147,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="page-footer__copyright">
+            <div class="page-footer__copyright copyright">
                 <a class="copyright__link" href="">HTML Academy</a>
                 <a class="copyright__logo" href=""></a>
             </div>
