@@ -1,0 +1,36 @@
+.main-promo {
+    font-style: normal;
+    font-weight: normal;
+    background-color: $bg-green;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+.main-promo__position {
+    padding-bottom: 22px;
+}
+
+.main-promo__title {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.main-promo__slogan {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.main-promo__link {
+    color: $color-white;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    background-color: $green;
+}

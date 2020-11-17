@@ -1,0 +1,91 @@
+.example {
+    background-color: $bg-gray;
+}
+
+.example__title {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: $color-black;
+}
+
+.example__item {
+    &::before {
+        content: "";
+        position: absolute;
+        border: 1px solid $color-line;
+        box-sizing: border-box;
+        border-radius: 3px;
+        width: 124px;
+        height: 56px;
+    }
+}
+
+.example__description {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.example__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.example__value {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-black;
+}
+
+.example__item-description {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: $color-dark-gray;
+}
+
+.example__spent {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color-black;
+}
+
+.example__fat {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color-black;
+}
+
+.example__scale {
+    background-color: $color-white;
+}
+
+.example__scale-run {
+    background-color: $green;
+}
+
+.example__bony {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color-black;
+}
