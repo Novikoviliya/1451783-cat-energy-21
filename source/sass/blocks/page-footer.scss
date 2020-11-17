@@ -1,35 +1,37 @@
-.page-footer {
-    background-color: $color-special-gray;
+[.page-footer {
+  background-color: $color-special-gray;
 }
 
 .social__list {
-    list-style: none;
+  list-style: none;
 }
 
 .copyright__link {
-    font-family: "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    color: $color-dark-gray;
-    text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-dark-gray;
+  text-decoration: none;
 }
 
 .page-footer__logo {
-    &::after {
-        content: "";
-        position: absolute;
-        width: 280px;
-        border: 1px solid $color-line;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    border: 1px solid $color-line;
+  }
 }
 
 .page-footer__intro-social {
-    &::after {
-        content: "";
-        position: absolute;
-        width: 280px;
-        border: 1px solid $color-line;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    border: 1px solid $color-line;
+  }
 }
+
+]

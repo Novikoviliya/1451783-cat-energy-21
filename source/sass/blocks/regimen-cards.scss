@@ -1,41 +1,41 @@
 .regimen-cards {
-    padding-bottom: 27px;
+  padding-bottom: 27px;
 }
 
 .regimen-cards__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .regimen-cards__item {
-    background-color: $color-special-gray;
+  background-color: $color-special-gray;
 }
 
 .regimen-cards__title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 37px;
-    color: $color-black;
-    text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  color: $color-black;
+  text-transform: uppercase;
 }
 
 .regimen-cards__description {
-    font-family: "Arial", sans-serif;
-    color: $color-dark-gray;
-    &::after {
-        content: "";
-        position: absolute;
-        width: 240px;
-        border: 1px solid $color-line;
-    }
+  font-family: "Arial", sans-serif;
+  color: $color-dark-gray;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 240px;
+    border: 1px solid $color-line;
+  }
 }
 
 .regimen-cards__link {
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: $color-black;
-    text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-black;
+  text-decoration: none;
 }
