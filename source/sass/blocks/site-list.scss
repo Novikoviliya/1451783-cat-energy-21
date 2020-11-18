@@ -1,0 +1,13 @@
+.site-list__link {
+  color: $color-black;
+  text-decoration: none;
+}
+
+.site-list__item {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    border: 1px solid $color-line-gray;
+  }
+}
