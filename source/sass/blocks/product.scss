@@ -1,0 +1,19 @@
+.product__info {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-dark-gray;
+}
+
+.product_order {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $green;
+}

@@ -1,0 +1,16 @@
+.page-catalog__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-black;
+}
+
+.page-catalog__title--line {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    border: 1px solid $color-line-variant;
+  }
+}
