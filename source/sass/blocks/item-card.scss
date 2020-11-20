@@ -1,0 +1,28 @@
+.item-card__name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-special-dark-balck;
+}
+
+.item-card__info-name {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-dark-gray;
+}
+
+.item-card__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $green;
+}

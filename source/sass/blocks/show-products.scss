@@ -1,0 +1,28 @@
+.show-products__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-special-black;
+}
+
+.show-products__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-dark-gray;
+}
+
+.show-products__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $color-special-gray;
+  color: $color-dark-gray;
+}
