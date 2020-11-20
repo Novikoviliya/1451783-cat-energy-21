@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -18,16 +19,16 @@
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active"><a href="index.html">главная</a></li>
-                <li class="site-list__item"><a href="catalog.html">каталог продукции</a></li>
-                <li class="site-list__item"><a href="form.html">подбор программы</a></li>
+                <li class="site-list__item site-list__item--active"><a class="site-list__link" href="index.html">главная</a></li>
+                <li class="site-list__item"><a class="site-list__link" href="catalog.html">каталог продукции</a></li>
+                <li class="site-list__item"><a class="site-list__link" href="form.html">подбор программы</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="page-main">
         <h1 class="visually-hidden">«Cat Energy» – Здоровое питание котейки!</h1>
-        <section class="main-promo">
+        <section class="main-promo main-promo__position">
             <div class="main-promo__wrapper">
                 <h2 class="main-promo__title">Функциональное питание для котов</h2>
                 <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
@@ -42,13 +43,13 @@
             <section class="regimen-cards">
                 <h2 class="visually-hidden">Подходящая программа для котейки!</h2>
                 <ul class="regimen-cards__list">
-                    <li class="regimen-cards__item">
+                    <li class="regimen-cards__item regimen-cards__item--slim">
                         <div class="regimen-cards__logo"></div>
                         <h3 class="regimen-cards__title">похудение</h3>
                         <p class="regimen-cards__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                         <a class="regimen-cards__link" href="catalog.html">каталог slim</a>
                     </li>
-                    <li class="regimen-cards__item">
+                    <li class="regimen-cards__item regimen-cards__item--fat">
                         <div class="regimen-cards__logo"></div>
                         <h3 class="regimen-cards__title">Набор массы</h3>
                         <p class="regimen-cards__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!.</p>
@@ -110,7 +111,7 @@
                 <div class="example__progress-bar">
                     <button class="example__fat">Было</button>
                     <div class="example__scale">
-                        <button class="example__scale"></button>
+                        <button class="example__scale-run"></button>
                     </div>
                     <button class="example__bony">Стало</button>
                 </div>

@@ -1,0 +1,21 @@
+.page-footer {
+  background-color: $color-special-gray;
+}
+
+.page-footer__logo {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    border: 1px solid $color-line;
+  }
+}
+
+.page-footer__intro-social {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    border: 1px solid $color-line;
+  }
+}
