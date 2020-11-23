@@ -19,11 +19,12 @@
   display: none;
 }
 
-@media(max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .page-header__toggle {
     display: block;
   }
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     .page-header__wrapper {
       display: flex;
       flex-direction: row;
@@ -32,9 +33,10 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .page-header {
     padding: 50px 50px;
+
     &::after {
       content: "";
       position: absolute;

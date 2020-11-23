@@ -34,26 +34,29 @@
   text-decoration: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .regimen-cards {
     display: flex;
     flex-direction: column;
     padding: 0 30px;
   }
+
   .regimen-cards__item {
     min-width: 708px;
     min-height: 372px;
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .regimen-cards__list {
     display: flex;
     flex-direction: row;
   }
+
   .regimen-cards__item:last-child {
     margin-left: 70px;
   }
+
   .regimen-cards__item {
     min-width: 570px;
     min-height: 370px;

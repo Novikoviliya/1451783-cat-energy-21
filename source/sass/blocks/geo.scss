@@ -27,10 +27,11 @@
   color: $color-dark-gray;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .geo__title {
     padding-left: 71px;
   }
+
   .geo__description {
     padding-right: 72px;
     padding-left: 295px;

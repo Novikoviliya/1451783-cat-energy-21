@@ -97,62 +97,74 @@
   color: $color-black;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .example {
     background-color: $color-white;
   }
+
   .example__wrapper {
     padding: 0 30px;
   }
+
   .example__slim {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 60px;
   }
+
   .example__item:last-child {
     margin-left: 40px;
   }
+
   .example__cat-wrapper {
     padding-bottom: 20px;
     background-color: $bg-gray;
   }
+
   .example__scale {
     background-color: inherit;
   }
+
   .example__scale-run {
     width: 420px;
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .example {
     padding-top: 70px;
     position: relative;
     background-color: $bg-gray;
   }
+
   .example__title {
     position: absolute;
     top: -50px;
   }
+
   .example__slim {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
+
   .example__cat-wrapper {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     margin-right: 80px;
   }
+
   .example__cat-fat-wrapper {
     margin-right: 200px;
   }
+
   .example__cat-slim-wrapper {
     margin-right: 200px;
   }
+
   .example__position {
     display: grid;
     align-content: flex-start;
