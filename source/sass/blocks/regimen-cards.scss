@@ -24,13 +24,6 @@
 .regimen-cards__description {
   font-family: "Arial", sans-serif;
   color: $color-dark-gray;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 240px;
-    border: 1px solid $color-line;
-  }
 }
 
 .regimen-cards__link {
@@ -39,4 +32,30 @@
   text-transform: uppercase;
   color: $color-black;
   text-decoration: none;
+}
+
+@media(min-width: $tablet-width) {
+  .regimen-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  .regimen-cards__item {
+    min-width: 708px;
+    min-height: 372px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .regimen-cards__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .regimen-cards__item:last-child {
+    margin-left: 70px;
+  }
+  .regimen-cards__item {
+    min-width: 570px;
+    min-height: 370px;
+  }
 }

@@ -1,3 +1,10 @@
+.geo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
 .geo__title {
   margin: 0;
   padding: 0;
@@ -10,10 +17,22 @@
 }
 
 .geo__description {
+  margin: 0;
+  padding: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: $color-dark-gray;
+}
+
+@media(min-width: $tablet-width) {
+  .geo__title {
+    padding-left: 71px;
+  }
+  .geo__description {
+    padding-right: 72px;
+    padding-left: 295px;
+  }
 }

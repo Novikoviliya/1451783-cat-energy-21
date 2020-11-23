@@ -2,12 +2,3 @@
   margin: 0;
   padding: 0;
 }
-
-.product-catalog__item {
-  &::after {
-    content: "";
-    position: absolute;
-    width: 320px;
-    border: 1px solid $color-line-variant;
-  }
-}
