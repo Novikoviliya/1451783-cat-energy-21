@@ -4,15 +4,6 @@
   border: none;
 }
 
-.request__write--line {
-  &::after {
-    content: "";
-    position: absolute;
-    width: 320px;
-    border: 1px solid $color-line-gray;
-  }
-}
-
 .request__title-line {
   margin: 0;
   padding: 0;
@@ -23,24 +14,6 @@
   color: $color-black;
 }
 
-.request__title-line--bar {
-  &::after {
-    content: "";
-    position: absolute;
-    width: 99px;
-    border: 2px solid $green;
-  }
-}
-
-.request__title-line--stripe {
-  &::after {
-    content: "";
-    position: absolute;
-    width: 158px;
-    border: 2px solid $green;
-  }
-}
-
 .request__textarea {
   font-style: normal;
   font-weight: normal;
@@ -49,15 +22,6 @@
   text-transform: uppercase;
   color: $color-dark-gray;
   resize: none;
-}
-
-.request__title-line--stria {
-  &::after {
-    content: "";
-    position: absolute;
-    width: 136px;
-    border: 2px solid $green;
-  }
 }
 
 .request__button {

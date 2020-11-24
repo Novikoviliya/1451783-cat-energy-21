@@ -5,12 +5,3 @@
   line-height: 24px;
   color: $color-black;
 }
-
-.item-title__title--line {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 53px;
-    border: 2px solid $green;
-  }
-}

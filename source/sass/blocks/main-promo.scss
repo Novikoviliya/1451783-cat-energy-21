@@ -1,9 +1,54 @@
 .main-promo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 320px;
+  min-height: 302px;
   font-style: normal;
   font-weight: normal;
   background-color: $bg-green;
   text-transform: uppercase;
   color: $color-white;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-promo {
+    background-color: $color-white;
+  }
+
+  .main-promo__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: flex-start;
+    color: $color-black;
+    text-align: left;
+    min-width: 769px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .main-promo__title {
+    order: 1;
+  }
+
+  .main-promo__slogan {
+    order: 2;
+  }
+
+  .main-promo__link {
+    display: none;
+    order: 3;
+  }
+
+  .main-promo__image {
+    order: 4;
+  }
+
+  .main-promo picture {
+    order: 4;
+  }
 }
 
 .main-promo__position {
@@ -13,6 +58,7 @@
 .main-promo__title {
   padding: 0;
   margin: 0;
+  padding-bottom: 25px;
   font-size: 36px;
   line-height: 36px;
   font-style: normal;
@@ -23,14 +69,46 @@
 .main-promo__slogan {
   padding: 0;
   margin: 0;
+  padding-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
 }
 
 .main-promo__link {
+  display: inline-block;
   color: $color-white;
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
   background-color: $green;
+}
+
+.main-promo img {
+  min-width: 280px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: $desktop-width) {
+  .main-promo {
+    margin-bottom: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 748px;
+      width: 50%;
+      height: 60%;
+      background-color: $green;
+    }
+  }
+
+  .main-promo__wrapper {
+    padding-right: 300px;
+  }
+
+  .main-promo picture {
+    margin-left: 570px;
+    margin-top: -220px;
+    z-index: 1;
+  }
 }

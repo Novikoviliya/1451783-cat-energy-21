@@ -1,4 +1,8 @@
 .page-header {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -7,6 +11,42 @@
   color: $color-black;
 }
 
-.page-header__index-page {
+.page-header__wrapper {
   padding-bottom: 27px;
+}
+
+.page-header__toggle {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header__toggle {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    .page-header__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 50px 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $green;
+      top: 0;
+      left: 748px;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
 }
