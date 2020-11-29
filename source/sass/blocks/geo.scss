@@ -2,16 +2,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 30px 18px;
 }
 
 .geo__title {
   margin: 0;
   padding: 0;
+  width: 140px;
+  height: 64px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   color: $color-special-black;
   text-transform: uppercase;
 }
@@ -19,6 +22,8 @@
 .geo__description {
   margin: 0;
   padding: 0;
+  width: 140px;
+  height: 50px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -28,12 +33,34 @@
 }
 
 @media (min-width: $tablet-width) {
+  .geo {
+    padding: 51px 70px;
+  }
+
   .geo__title {
-    padding-left: 71px;
+    width: 171px;
+    height: 74px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .geo__description {
-    padding-right: 72px;
-    padding-left: 295px;
+    width: 159px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 20px;
+    text-indent: 60px;
+
+    &--city {
+      display: inline-block;
+      margin-top: 20px;
+      text-indent: 28px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .geo {
+    display: none;
   }
 }
