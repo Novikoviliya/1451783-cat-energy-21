@@ -15,3 +15,17 @@
   display: block;
   padding: 0 10px;
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    min-width: 400px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    min-width: 700px;
+    padding: 0 90px;
+  }
+}

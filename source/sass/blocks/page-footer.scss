@@ -1,4 +1,5 @@
 .page-footer {
+  height: 236px;
   background-color: $color-special-gray;
 }
 
@@ -15,5 +16,19 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0 30px;
+  }
+
+  .page-footer {
+    height: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    height: 149px;
+  }
+
+  .page-footer__logo-icon {
+    padding-left: 80px;
   }
 }

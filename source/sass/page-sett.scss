@@ -67,9 +67,16 @@ img {
   padding: 0 19px;
 }
 
+@media (min-width: $tablet-width) {
+  .container {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .container {
     margin: 0 auto;
-    padding: 0 120px;
+    padding: 0 110px;
   }
 }

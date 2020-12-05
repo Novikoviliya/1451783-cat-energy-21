@@ -1,15 +1,47 @@
 .special {
   margin-top: 39px;
   background-color: $bg-green;
+  width: 280px;
+  height: 289px;
+  text-align: center;
 }
 
 .special__description {
   margin: 0;
   padding: 0;
+  padding-top: 186px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: $color-white;
+}
+
+@media (min-width: $tablet-width) {
+  .special {
+    width: 708px;
+    height: 200px;
+    margin-top: 66px;
+  }
+
+  .special__description {
+    text-align: left;
+    padding-left: 424px;
+    padding-top: 73px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .special {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+  }
+
+  .special__description {
+    padding-left: 0;
+    text-align: center;
+    padding-top: 188px;
+  }
 }
