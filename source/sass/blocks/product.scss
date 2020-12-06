@@ -1,3 +1,36 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.product__description {
+  padding-top: 20px;
+}
+
+.product__title {
+  margin: 0;
+  padding-right: 70px;
+  padding-bottom: 13px;
+}
+
+.product__image-link {
+  width: 68px;
+  height: 86px;
+  margin: 0 33px;
+  margin-top: 34px;
+}
+
+.product__info-name {
+  padding: 0;
+}
+
+.product__info-value {
+  padding: 0;
+  text-align: right;
+}
+
 .product__title-link {
   font-style: normal;
   font-weight: normal;
@@ -6,24 +39,117 @@
   text-transform: uppercase;
   color: $color-special-dark-balck;
   text-decoration: none;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .product__info {
+  width: 100%;
+  border-collapse: collapse;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   color: $color-dark-gray;
+  border-spacing: 0;
 }
 
 .product__order {
+  width: 280px;
+  height: 40px;
+  margin-top: 23px;
+  margin-bottom: 25px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 0px;
+  line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
   color: $color-white;
   background-color: $green;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    margin-left: 30px;
+    padding-bottom: 16px;
+    padding-left: 39px;
+    padding-right: 37px;
+    width: 324px;
+    flex-direction: column;
+    background-color: $color-special-gray;
+  }
+
+  .product__order {
+    width: 248px;
+    height: 39px;
+    margin-top: 36px;
+  }
+
+  .product__description {
+    padding-top: 36px;
+    width: 100%;
+  }
+
+  .product__info {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .product__title {
+    padding-right: 0;
+    padding-bottom: 17px;
+    text-align: center;
+  }
+
+  .product__info-position {
+    border-bottom: 1px solid $color-additional;
+  }
+
+  .product__info-name {
+    padding-top: 7px;
+    padding-bottom: 8px;
+    width: 50%;
+  }
+
+  .product__info-value {
+    padding-top: 7px;
+    padding-bottom: 8px;
+    width: 50%;
+  }
+
+  .product__title-link {
+    font-size: 20px;
+    line-height: 24px;
+
+    &--shadow {
+      display: none;
+    }
+
+    &--hidden {
+      display: block;
+    }
+  }
+
+  .product__image-link {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 245px;
+  }
+
+  .product__order {
+    width: 168px;
+    height: 40px;
+  }
 }

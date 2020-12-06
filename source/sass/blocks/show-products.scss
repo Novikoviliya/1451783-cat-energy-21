@@ -1,22 +1,45 @@
+.show-products {
+  text-align: center;
+}
+
 .show-products__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 79px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $color-special-black;
+
+  &--shadow {
+    display: none;
+  }
 }
 
 .show-products__description {
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   color: $color-dark-gray;
+
+  &--shadow {
+    display: none;
+  }
 }
 
 .show-products__link {
+  display: inline-block;
+  margin-top: 21px;
+  padding-top: 30px;
+  width: 279px;
+  height: 60px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -25,4 +48,53 @@
   text-decoration: none;
   background-color: $color-special-gray;
   color: $color-dark-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .show-products {
+    padding-top: 80px;
+    width: 324px;
+    height: 429px;
+    border: 2px solid $color-special-gray;
+  }
+
+  .show-products__title {
+    font-size: 20px;
+    line-height: 22px;
+
+    &--shadow {
+      display: block;
+    }
+  }
+
+  .show-products__description {
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 24px;
+
+    &--shadow {
+      display: block;
+    }
+  }
+
+  .show-products__link {
+    width: 249px;
+    height: 40px;
+    margin-top: 90px;
+    padding-top: 18px;
+    font-size: 16px;
+    line-height: 0px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-products {
+    width: 245px;
+    margin-left: 28px;
+  }
+
+  .show-products__link {
+    width: 169px;
+    height: 40px;
+  }
 }

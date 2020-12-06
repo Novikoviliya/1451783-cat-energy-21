@@ -1,7 +1,27 @@
 .page-catalog__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 41px;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   color: $color-black;
+}
+
+@media (min-width: $tablet-width) {
+  .page-catalog__title {
+    padding-top: 45px;
+    padding-bottom: 85px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-catalog__title {
+    padding-top: 0;
+  }
 }

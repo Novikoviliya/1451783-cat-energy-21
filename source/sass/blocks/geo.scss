@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 18px;
+  padding: 41px 18px;
+  background-color: $color-white;
 }
 
 .geo__title {
@@ -17,6 +18,10 @@
   line-height: 20px;
   color: $color-special-black;
   text-transform: uppercase;
+}
+
+.geo__color--toggle {
+  background-color: $color-special-gray;
 }
 
 .geo__description {
@@ -34,7 +39,12 @@
 
 @media (min-width: $tablet-width) {
   .geo {
+    height: 210px;
     padding: 51px 70px;
+  }
+
+  .geo__color--toggle {
+    padding-top: 45px;
   }
 
   .geo__title {
@@ -61,6 +71,25 @@
 
 @media (min-width: $desktop-width) {
   .geo {
-    display: none;
+    position: absolute;
+    margin: 95px 109px;
+    padding: 64px 75px;
+    width: 570px;
+    height: 201px;
+  }
+
+  .geo__color--toggle {
+    background-color: $color-white;
+  }
+
+  .geo__description {
+    width: 270px;
+    height: 60px;
+    padding-left: 90px;
+    text-indent: 0;
+
+    &--city {
+      text-indent: 0;
+    }
   }
 }
