@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 41px 18px;
-  background-color: $color-white;
+  padding: 30px 18px;
 }
 
 .geo__title {
@@ -21,7 +20,7 @@
 }
 
 .geo__color--toggle {
-  background-color: $color-special-gray;
+  background-color: $color-white;
 }
 
 .geo__description {

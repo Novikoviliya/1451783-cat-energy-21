@@ -14,7 +14,7 @@
 
 .page-header__wrapper--bar {
   height: 66px;
-  padding-top: 14px;
+  padding-top: 12px;
   padding-left: 20px;
   border-bottom: 1px solid $color-line;
 }
@@ -27,17 +27,18 @@
   }
 
   .page-header__wrapper--bar {
-    padding-top: 34px;
-    padding-left: 45px;
+    padding-top: 25px;
+    padding-left: 30px;
     border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    margin-bottom: 13px;
-    padding: 50px 50px;
+    margin-bottom: 0;
+    padding: 33px 30px;
   }
+
 
   .page-header__index-page--color {
     &::before {

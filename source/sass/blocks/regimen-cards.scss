@@ -1,4 +1,5 @@
 .regimen-cards {
+  padding: 22px 19px;
   padding-bottom: 27px;
 }
 
@@ -9,10 +10,21 @@
 }
 
 .regimen-cards__item {
+  width: 280px;
+  height: 266px;
   background-color: $color-special-gray;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
 }
 
 .regimen-cards__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 92px;
+  padding-top: 32px;
+  padding-bottom: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -22,11 +34,17 @@
 }
 
 .regimen-cards__description {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 33px;
+  padding-bottom: 42px;
   font-family: "Arial", sans-serif;
   color: $color-dark-gray;
 }
 
 .regimen-cards__link {
+  margin-left: 20px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -39,26 +57,73 @@
     display: flex;
     flex-direction: column;
     padding: 0 30px;
+    padding-bottom: 42px;
+  }
+
+  .regimen-cards__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 53px;
+    padding-top: 75px;
+    padding-bottom: 25px;
+  }
+
+  .regimen-cards__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 52px;
+    padding-right: 275px;
+    padding-bottom: 52px;
+  }
+
+  .regimen-cards__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 33px;
   }
 
   .regimen-cards__item {
     min-width: 708px;
     min-height: 372px;
+
+    &:first-child {
+      margin-bottom: 30px;
+    }
+
+    &:last-child {
+      padding-right: 40px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .regimen-cards {
+    padding: 0 110px;
+    padding-bottom: 40px;
+  }
+
   .regimen-cards__list {
     display: flex;
     flex-direction: row;
   }
 
-  .regimen-cards__item:last-child {
-    margin-left: 70px;
-  }
-
   .regimen-cards__item {
     min-width: 570px;
-    min-height: 370px;
+    min-height: 374px;
+
+    &:last-child {
+      margin-left: 80px;
+      padding-right: 0;
+    }
+  }
+
+  .regimen-cards__title {
+    padding-left: 214px;
+    padding-bottom: 74px;
+  }
+
+  .regimen-cards__description {
+    padding-right: 30px;
+    padding-bottom: 29px;
   }
 }
