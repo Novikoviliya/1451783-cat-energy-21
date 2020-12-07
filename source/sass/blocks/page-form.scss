@@ -23,11 +23,13 @@
 
 @media (min-width: $tablet-width) {
   .page-form__wrapper {
-    padding: 5px 29px;
+    padding: 0 30px;
   }
 
   .page-form__title {
-    padding-bottom: 57px;
+    padding-top: 47px;
+    padding-bottom: 55px;
+    padding-left: 38px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -42,7 +44,7 @@
 
 @media (min-width: $desktop-width) {
   .page-form__wrapper {
-    padding: 0 70px;
+    padding: 27px 70px;
   }
 
   .page-form__title {

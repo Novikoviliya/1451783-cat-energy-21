@@ -5,24 +5,71 @@
   position: relative;
 }
 
-.request__write {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 24px;
+@media (max-width: 767px) {
+  .request__write {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 8px;
+
+    &--line::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 96px;
+      width: 100%;
+      border-bottom: 1px solid $color-line;
+    }
+
+    &--line::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -60px;
+      width: 100%;
+      border-bottom: 1px solid $color-line;
+    }
+  }
 }
 
 .request__title-line {
   margin: 0;
   padding: 0;
-  padding-top: 44px;
+  padding-top: 53px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
   color: $color-black;
 
+  &--bar::before {
+    content: "";
+    position: absolute;
+    top: 69px;
+    right: -18px;
+    width: 99px;
+    border-bottom: 2px solid $green;
+  }
+
+  &--stripe::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -18px;
+    width: 158px;
+    border-bottom: 2px solid $green;
+  }
+
+  &--stria::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: -18px;
+    width: 136px;
+    border-bottom: 2px solid $green;
+  }
+
   &--size {
-    padding-top: 24px;
+    padding-top: 20px;
     padding-bottom: 39px;
   }
 }
@@ -30,8 +77,8 @@
 .request__textarea {
   width: 280px;
   height: 150px;
-  padding: 12px 13px;
-  margin-top: 35px;
+  padding: 8px 13px;
+  margin-top: 40px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -45,7 +92,7 @@
 .request__button {
   width: 280px;
   height: 40px;
-  margin-top: 18px;
+  margin-top: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -69,27 +116,79 @@
 }
 
 .request__write--down {
+  display: block;
   padding-left: 47px;
+  padding-right: 57px;
+  padding-bottom: 25px;
+
+  &:last-child {
+    padding-right: 97px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .request__field--border {
-    margin-top: 30px;
-    padding-top: 14px;
+    margin-top: 52px;
+    padding-top: 15px;
     width: 630px;
     height: 196px;
     border: 1px solid $color-border;
   }
 
   .request__title-line {
-    padding-top: 74px;
+    padding-top: 75px;
     padding-left: 40px;
     padding-bottom: 40px;
     font-size: 36px;
     line-height: 36px;
 
+    &--bar::before {
+      top: 97px;
+      left: -29px;
+      width: 30px;
+    }
+
+    &--bar::after {
+      content: "";
+      position: absolute;
+      top: 97px;
+      right: -28px;
+      width: 145px;
+      border-bottom: 2px solid $green;
+    }
+
+    &--stripe::before {
+      top: 25px;
+      right: -28px;
+      width: 478px;
+    }
+
+    &--stripe::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: -28px;
+      width: 30px;
+      border-bottom: 2px solid $green;
+    }
+
+    &--stria::before {
+      top: 85px;
+      right: -28px;
+      width: 446px;
+    }
+
+    &--stria::after {
+      content: "";
+      position: absolute;
+      top: 85px;
+      left: -30px;
+      width: 30px;
+      border-bottom: 2px solid $green;
+    }
+
     &--size {
-      padding-top: 52px;
+      padding-top: 62px;
       padding-bottom: 63px;
     }
   }
@@ -122,7 +221,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 630px;
-    height: 146px;
+    height: 140px;
   }
 
   .request__info--edit-control {
@@ -171,15 +270,51 @@
     width: 570px;
     height: 196px;
     margin-top: 0;
-    padding-top: 17px;
+    padding-top: 16px;
     margin-left: 80px;
   }
 
   .request__title-line {
-    padding-top: 25px;
+    padding-top: 50px;
+
+    &--bar::before {
+      top: 73px;
+      left: -70px;
+      width: 70px;
+    }
+
+    &--bar::after {
+      top: 73px;
+      right: -70px;
+      width: 778px;
+    }
+
+    &--stripe::before {
+      top: 24px;
+      right: -70px;
+      width: 1108px;
+    }
+
+    &--stripe::after {
+      top: 24px;
+      left: -70px;
+      width: 70px;
+    }
+
+    &--stria::before {
+      top: 88px;
+      right: -70px;
+      width: 1078px;
+    }
+
+    &--stria::after {
+      top: 87px;
+      left: -70px;
+      width: 70px;
+    }
 
     &--size {
-      padding-top: 57px;
+      padding-top: 65px;
     }
   }
 
@@ -200,7 +335,7 @@
   }
 
   .request__write--down {
-    padding: 0 100px;
+    padding: 0 97px;
   }
 
   .request__button {
@@ -213,6 +348,7 @@
     justify-content: flex-start;
     flex-direction: row;
     width: 100%;
+    height: 120px;
   }
 
   .request__text {
