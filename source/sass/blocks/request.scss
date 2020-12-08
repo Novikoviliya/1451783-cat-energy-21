@@ -275,7 +275,7 @@
   }
 
   .request__title-line {
-    padding-top: 50px;
+    padding-top: 51px;
 
     &--bar::before {
       top: 73px;
@@ -314,13 +314,15 @@
     }
 
     &--size {
-      padding-top: 65px;
+      padding-top: 64px;
+      padding-bottom: 62px;
     }
   }
 
   .request__position-phone {
     padding-top: 35px;
     padding-left: 36px;
+    padding-bottom: 42px;
   }
 
   .request__textarea {
@@ -335,7 +337,7 @@
   }
 
   .request__write--down {
-    padding: 0 97px;
+    padding: 0 98px;
   }
 
   .request__button {
