@@ -8,7 +8,7 @@
   text-decoration: none;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 768px) {
   .site-list {
     display: flex;
     flex-direction: row;
@@ -31,7 +31,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 767px) {
   .site-list {
     display: none;
   }
