@@ -21,7 +21,7 @@
 .form__text-email {
   width: 219px;
   height: 45px;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
   margin-top: 34px;
   margin-left: 9px;
   padding-left: 15px;
@@ -79,9 +79,8 @@
 .form__type {
   display: block;
   position: relative;
-  padding-top: 14px;
+  padding-top: 26px;
   padding-left: 46px;
-  padding-bottom: 10px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -93,7 +92,7 @@
     content: "";
     position: absolute;
     left: 1px;
-    top: 6px;
+    top: 20px;
     width: 30px;
     height: 30px;
     border: 1px solid $color-additional;
@@ -103,6 +102,7 @@
   &--radio:checked + ::after {
     content: "";
     position: absolute;
+    top: 29px;
     left: 10px;
     width: 13px;
     height: 13px;
@@ -156,8 +156,8 @@
   }
 
   .form__control-name {
-    margin-left: 8px;
-    padding-left: 22px;
+    margin-left: 12px;
+    padding-left: 19px;
     width: 567px;
     height: 52px;
     font-size: 20px;
@@ -165,8 +165,8 @@
   }
 
   .form__control-weight {
-    margin-left: 12px;
-    padding-left: 23px;
+    margin-left: 16px;
+    padding-left: 20px;
     width: 536px;
     height: 52px;
     font-size: 20px;
@@ -174,8 +174,8 @@
   }
 
   .form__control-age {
-    margin-left: 9px;
-    padding-left: 23px;
+    margin-left: 13px;
+    padding-left: 20px;
     width: 497px;
     height: 52px;
     font-size: 20px;
@@ -185,8 +185,9 @@
   .form__type {
     font-size: 20px;
     line-height: 30px;
-    padding-top: 14px;
-    padding-left: 88px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    padding-left: 86px;
 
     &--radio + ::before {
       left: 27px;
@@ -253,21 +254,26 @@
   .form__control-name {
     width: 506px;
     height: 52px;
-    margin-left: 10px;
+    margin-left: 9px;
+    padding-left: 22px;
+  }
+
+  .form__type {
+    padding-left: 89px;
   }
 
   .form__control-weight {
     width: 475px;
     height: 52px;
-    margin-left: 14px;
-    padding-left: 23px;
+    margin-left: 13px;
+    padding-left: 20px;
   }
 
   .form__control-age {
     width: 436px;
     height: 52px;
-    padding-left: 21px;
-    margin-left: 11px;
+    padding-left: 19px;
+    margin-left: 10px;
   }
 
   .form__text-email {

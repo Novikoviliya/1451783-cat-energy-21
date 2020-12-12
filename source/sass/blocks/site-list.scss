@@ -8,13 +8,13 @@
   text-decoration: none;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 768px) {
   .site-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 31px;
+    padding: 20px 36px;
   }
 
   .site-list__link {
@@ -31,7 +31,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 767px) {
   .site-list {
     display: none;
   }
@@ -39,7 +39,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    padding: 10px 80px;
+    padding: 13px 80px;
   }
 
   .site-list__item {
