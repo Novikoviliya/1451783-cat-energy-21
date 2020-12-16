@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 40px 18px;
+  padding: 29px 18px;
   background-color: white;
 }
 
@@ -40,7 +40,8 @@
 @media (min-width: $tablet-width) {
   .geo {
     height: 210px;
-    padding: 51px 70px;
+    padding: 51px 68px;
+    margin-top: 76px;
   }
 
   .geo__color--toggle {
@@ -73,7 +74,7 @@
 @media (min-width: $desktop-width) {
   .geo {
     position: absolute;
-    margin: 95px 109px;
+    margin: 96px 109px;
     padding: 64px 75px;
     width: 570px;
     height: 201px;

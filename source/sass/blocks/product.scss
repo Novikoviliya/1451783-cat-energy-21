@@ -6,13 +6,12 @@
 }
 
 .product__description {
-  padding-top: 20px;
+  padding-top: 19px;
+  width: 140px;
 }
 
 .product__title {
   margin: 0;
-  padding-right: 70px;
-  padding-bottom: 13px;
 }
 
 .product__image-link {
@@ -46,7 +45,8 @@
 }
 
 .product__info {
-  width: 100%;
+  width: 140px;
+  word-break: break-word;
   border-collapse: collapse;
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -54,14 +54,14 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-dark-gray;
+  margin-top: 14px;
+  margin-bottom: 21px;
   border-spacing: 0;
 }
 
 .product__order {
   width: 280px;
   height: 40px;
-  margin-top: 23px;
-  margin-bottom: 25px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -77,10 +77,11 @@
 @media (min-width: $tablet-width) {
   .product {
     margin-left: 30px;
-    padding-bottom: 16px;
-    padding-left: 39px;
+    padding-left: 38px;
     padding-right: 37px;
+    padding-bottom: 40px;
     width: 324px;
+    height: 430px;
     flex-direction: column;
     background-color: $color-special-gray;
   }
@@ -88,22 +89,25 @@
   .product__order {
     width: 248px;
     height: 39px;
-    margin-top: 36px;
+    margin: 0;
+    padding-left: 2px;
+    padding-top: 11px;
   }
 
   .product__description {
-    padding-top: 36px;
-    width: 100%;
+    padding: 0;
+    padding-top: 30px;
+    width: 252px;
   }
 
   .product__info {
+    width: 248px;
     font-size: 16px;
     line-height: 16px;
   }
 
   .product__title {
-    padding-right: 0;
-    padding-bottom: 17px;
+    padding: 0;
     text-align: center;
   }
 
@@ -112,7 +116,7 @@
   }
 
   .product__info-name {
-    padding-top: 7px;
+    padding-top: 7.5px;
     padding-bottom: 8px;
     width: 50%;
   }
@@ -146,10 +150,31 @@
 @media (min-width: $desktop-width) {
   .product {
     width: 245px;
+    margin-left: 0;
+
+    &:nth-child(odd) {
+      margin-right: 80px;
+    }
+  }
+
+  .product__image-link {
+    padding-bottom: 25px;
   }
 
   .product__order {
     width: 168px;
     height: 40px;
+  }
+
+  .product__description {
+    width: 173px;
+  }
+
+  .product__info {
+    width: 173px;
+  }
+
+  .product__info-value {
+    padding-right: 5px;
   }
 }

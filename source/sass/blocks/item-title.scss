@@ -1,7 +1,7 @@
 .item-title__title {
   margin: 0;
   padding: 0;
-  padding-top: 51px;
+  padding-top: 23px;
   padding-bottom: 34px;
   font-style: normal;
   font-weight: normal;
@@ -14,7 +14,7 @@
   .item-title__title {
     font-size: 36px;
     line-height: 36px;
-    padding-top: 65px;
+    padding-top: 68px;
     padding-left: 37px;
     padding-bottom: 80px;
   }
@@ -22,7 +22,7 @@
 
 @media (min-width: $desktop-width) {
   .item-title__title {
-    padding-top: 20px;
+    padding-top: 28px;
     padding-bottom: 82px;
     padding-left: 0;
   }
