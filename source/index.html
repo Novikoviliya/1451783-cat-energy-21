@@ -10,17 +10,18 @@
 
 <body class="page__body">
   <header class="page-header page-header__index-page page-header__index-page--color">
-    <div class="page-header__wrapper page-header__wrapper--bar">
+    <div class="page-header__wrapper">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-header__logo">
         <picture>
-            <img src="https://via.placeholder.com/150x150" width="34" height="38">
+          <img src="https://via.placeholder.com/150x150" width="34" height="38">
         </picture>
       </a>
     </div>
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active"><a class="site-list__link" href="index.html">главная</a></li>
+        <li class="site-list__item site-list__item--active"><a class="site-list__link" href="index.html">главная</a>
+        </li>
         <li class="site-list__item"><a class="site-list__link" href="catalog.html">каталог продукции</a></li>
         <li class="site-list__item"><a class="site-list__link" href="form.html">подбор программы</a></li>
       </ul>
@@ -34,47 +35,54 @@
         <h2 class="main-promo__title">Функциональное<br> питание для котов</h2>
         <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
         <picture>
-          <img src="https://via.placeholder.com/150x150" alt="Cat Energy" width="150" height="150">
+          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png, img/index-can-tablet@2x.png 2x">
+          <img class="main-promo__art" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+            alt="Питание для котов 500г">
         </picture>
         <a class="main-promo__link button" href="form.html">подобрать программу</a>
       </div>
     </section>
 
 
-      <section class="regimen-cards">
-        <h2 class="visually-hidden">Подходящая программа для котейки!</h2>
-        <ul class="regimen-cards__list">
-          <li class="regimen-cards__item regimen-cards__item--slim">
-            <div class="regimen-cards__logo"></div>
-            <h3 class="regimen-cards__title">похудение</h3>
-            <p class="regimen-cards__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="regimen-cards__link" href="catalog.html">каталог slim</a>
-          </li>
-          <li class="regimen-cards__item regimen-cards__item--fat">
-            <div class="regimen-cards__logo"></div>
-            <h3 class="regimen-cards__title">Набор массы</h3>
-            <p class="regimen-cards__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!.</p>
-            <a class="regimen-cards__link" href="catalog.html">каталог pro</a>
-          </li>
-        </ul>
-      </section>
-      <section class="advantages">
-        <h2 class="advantages__title">Как это работает</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему<br class="advantages__description--shadow"> вашего питомца!</p>
-          </li>
-        </ul>
-      </section>
+    <section class="regimen-cards">
+      <h2 class="visually-hidden">Подходящая программа для котейки!</h2>
+      <ul class="regimen-cards__list">
+        <li class="regimen-cards__item regimen-cards__item--slim">
+          <div class="regimen-cards__logo"></div>
+          <h3 class="regimen-cards__title">похудение</h3>
+          <p class="regimen-cards__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="regimen-cards__link" href="catalog.html">каталог slim</a>
+        </li>
+        <li class="regimen-cards__item regimen-cards__item--fat">
+          <div class="regimen-cards__logo"></div>
+          <h3 class="regimen-cards__title">Набор массы</h3>
+          <p class="regimen-cards__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+            Pro поможет вашему коту нарастить необходимые мышцы!.</p>
+          <a class="regimen-cards__link" href="catalog.html">каталог pro</a>
+        </li>
+      </ul>
+    </section>
+    <section class="advantages">
+      <h2 class="advantages__title">Как это работает</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+        <li class="advantages__item">
+          <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+          </p>
+        </li>
+        <li class="advantages__item">
+          <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        </li>
+        <li class="advantages__item">
+          <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему<br
+              class="advantages__description--shadow"> вашего питомца!</p>
+        </li>
+      </ul>
+    </section>
 
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
@@ -82,34 +90,43 @@
         <div class="example__inner">
           <div class="example__wrapper">
             <div class="example__slim">
-              <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+                Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+                по-прежнему спит по 16 часов в день.</p>
               <ul class="example__list">
                 <li class="example__item">
                   <b class="example__value">5 кг</b>
-                  <p class="example__item-description">снижение веса</p>
+                  <p class="example__item-description example__item-description--weight">снижение веса</p>
                 </li>
                 <li class="example__item">
                   <b class="example__value">60 дней</b>
-                  <p class="example__item-description">затрачено времени</p>
+                  <p class="example__item-description example__item-description--day">затрачено времени</p>
                 </li>
               </ul>
-              <p class="example__spent">Затраты на питание:<br class="example__spent--shadow"> <span class="example__spent--down">15 000 РУБ.<span></p>
+              <p class="example__spent">Затраты на питание:<br class="example__spent--shadow"> <span
+                  class="example__spent--down">15 000 РУБ.<span></p>
             </div>
           </div>
         </div>
         <div class="example__cat-wrapper">
           <div class="example__cat-fat-wrapper">
             <picture>
-              <img src="https://via.placeholder.com/150x150" alt="Котейка до похудения" width="150" height="150">
+              <source media="(min-width: 1440px)" srcset="img/cat-fat-desktop@1x.png, img/cat-fat-desktop@2x.png">
+              <source media="(min-width: 768px)" srcset="img/cat-fat-tablet@1x.png, img/cat-fat-desktop@2x.png">
+              <img class="example__cat-fat-wrapper-art" src="img/before-mobile@1x.png"
+                srcset="img/cat-fat-desktop@2x.png" alt="Котейка до похудения">
             </picture>
           </div>
-
           <div class="example__cat-slim-wrapper">
             <picture>
-              <img src="https://via.placeholder.com/150x150" alt="Котейка после похудения" width="135" height="60">
+              <source media="(min-width: 1440px)"
+                srcset="img/cat-skinny-desktop@1x.png, img/cat-skinny-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/cat-skinny-tablet@1x.png, img/cat-skinny-desktop@2x.png 2x">
+              <img class="example__cat-slim-wrapper-art" src="img/after-mobile@1x.png"
+                srcset="img/cat-skinny-desktop@2x.png 2x" alt="Котейка после похудения">
             </picture>
           </div>
-
           <div class="example__progress-bar">
             <button class="example__fat">Было</button>
             <div class="example__scale">
@@ -122,15 +139,16 @@
     </section>
     <div class="map map__toggle--color">
 
-      <section class="geo geo__color--toggle">
+      <section class="geo">
         <h2 class="geo__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
-      <p class="geo__description">ул. Большая Конюшенная, д. 19/8 <span class="geo__description--city">Санкт-Петербург</span></p>
+        <p class="geo__description">ул. Большая Конюшенная, д. 19/8 <span
+            class="geo__description--city">Санкт-Петербург</span></p>
       </section>
 
-    <div class="map__iframe">
-      <!--Здесь будет карта -->
+      <div class="map__iframe">
+        <!--Здесь будет карта -->
+      </div>
     </div>
-  </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__intro">
@@ -149,7 +167,8 @@
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
           </li>
         </ul>
       </div>

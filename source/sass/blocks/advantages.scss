@@ -1,6 +1,6 @@
 .advantages {
   padding: 0 20px;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
 }
 
 .advantages__title {
@@ -20,13 +20,14 @@
 }
 
 .advantages__item {
-  margin: 28px 0;
+  padding-bottom: 27px;
   padding-left: 80px;
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
+  padding-top: 28px;
   font-family: "Arial", sans-serif;
   list-style: none;
   color: $color-dark-gray;
@@ -45,13 +46,13 @@
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 185px;
+    padding-bottom: 157px;
   }
 
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 55px;
+    column-gap: 58px;
     row-gap: 245px;
   }
 
