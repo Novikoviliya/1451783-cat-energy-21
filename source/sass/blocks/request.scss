@@ -5,27 +5,36 @@
   position: relative;
 }
 
+.request__position-phone {
+  margin-left: -1px;
+  margin-top: 10px;
+}
+
+.request__position--email {
+  margin-left: -1px;
+}
+
 @media (max-width: 767px) {
   .request__write {
     display: flex;
     flex-direction: row;
     padding-bottom: 8px;
 
-    &--line::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 96px;
-      width: 100%;
-      border-bottom: 1px solid $color-line;
-    }
-
     &--line::before {
       content: "";
       position: absolute;
       left: 0;
-      bottom: -60px;
-      width: 100%;
+      top: 428px;
+      width: 320px;
+      border-bottom: 1px solid $color-line;
+    }
+
+    &--line::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -185px;
+      width: 320px;
       border-bottom: 1px solid $color-line;
     }
   }
@@ -78,7 +87,7 @@
   width: 280px;
   height: 150px;
   padding: 8px 13px;
-  margin-top: 40px;
+  margin-top: 37px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -105,7 +114,6 @@
 
 .request__text {
   padding-top: 9px;
-  padding-bottom: 20px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -135,6 +143,14 @@
     border: 1px solid $color-border;
   }
 
+  .request__position {
+    margin-left: 40px;
+  }
+
+  .request__position--email {
+    margin-top: 30px;
+  }
+
   .request__title-line {
     padding-top: 76px;
     padding-left: 40px;
@@ -143,7 +159,7 @@
     line-height: 36px;
 
     &--bar::before {
-      top: 97px;
+      top: 99px;
       left: -29px;
       width: 30px;
     }
@@ -151,30 +167,30 @@
     &--bar::after {
       content: "";
       position: absolute;
-      top: 97px;
-      right: -28px;
+      top: 99px;
+      right: -30px;
       width: 145px;
       border-bottom: 2px solid $green;
     }
 
     &--stripe::before {
-      top: 25px;
-      right: -28px;
+      top: 21px;
+      right: -30px;
       width: 478px;
     }
 
     &--stripe::after {
       content: "";
       position: absolute;
-      top: 25px;
-      left: -28px;
+      top: 21px;
+      left: -30px;
       width: 30px;
       border-bottom: 2px solid $green;
     }
 
     &--stria::before {
       top: 85px;
-      right: -28px;
+      right: -30px;
       width: 446px;
     }
 
@@ -195,12 +211,8 @@
 
   .request__position-phone {
     padding-left: 39px;
-    padding-top: 7px;
-    padding-bottom: 40px;
-  }
-
-  .request__position {
-    padding: 0 42px;
+    padding-top: 5px;
+    padding-bottom: 43px;
   }
 
   .request__textarea {
@@ -210,8 +222,8 @@
     line-height: 30px;
     padding-top: 9px;
     padding-left: 18px;
-    margin-left: 41px;
-    margin-top: 77px;
+    margin-left: 40px;
+    margin-top: 74px;
     border: 1px solid $color-border;
   }
 
@@ -235,8 +247,8 @@
 
   .request__write--down {
     display: block;
-    padding-left: 100px;
-    padding-right: 57px;
+    padding-left: 99px;
+    padding-right: 59px;
 
     &:last-child {
       padding-right: 97px;
@@ -255,8 +267,8 @@
   .request__text {
     font-size: 16px;
     line-height: 16px;
-    padding-top: 14px;
-    padding-right: 65px;
+    padding-top: 15px;
+    padding-right: 66px;
   }
 }
 
@@ -278,25 +290,25 @@
     padding-top: 51px;
 
     &--bar::before {
-      top: 73px;
+      top: 72px;
       left: -70px;
       width: 70px;
     }
 
     &--bar::after {
-      top: 73px;
+      top: 72px;
       right: -70px;
       width: 778px;
     }
 
     &--stripe::before {
-      top: 24px;
+      top: 23px;
       right: -70px;
       width: 1108px;
     }
 
     &--stripe::after {
-      top: 24px;
+      top: 23px;
       left: -70px;
       width: 70px;
     }
@@ -314,20 +326,21 @@
     }
 
     &--size {
-      padding-top: 64px;
+      padding-top: 66px;
       padding-bottom: 62px;
     }
   }
 
   .request__position-phone {
-    padding-top: 35px;
-    padding-left: 36px;
+    padding-top: 20px;
+    padding-left: 79px;
     padding-bottom: 42px;
   }
 
   .request__textarea {
     width: 1220px;
     height: 174px;
+    padding-top: 11px;
   }
 
   .request__info--edit-control {
@@ -338,11 +351,17 @@
 
   .request__write--down {
     padding: 0 98px;
+
+    &:last-child {
+      padding-left: 96px;
+    }
   }
 
   .request__button {
     width: 568px;
     height: 52px;
+    margin-top: 16px;
+    margin-left: 41px;
   }
 
   .request__info--edit {
@@ -354,7 +373,12 @@
   }
 
   .request__text {
-    padding-top: 17px;
-    padding-left: 80px;
+    padding-top: 18px;
+    padding-left: 81px;
+  }
+
+  .request__position--email {
+    margin-top: 27px;
+    margin-bottom: 68px;
   }
 }
