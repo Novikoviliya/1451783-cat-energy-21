@@ -5,6 +5,7 @@
   padding: 0 19px;
   background-color: white;
   margin-bottom: 22px;
+  padding-top: 30px;
 }
 
 .geo__title {
@@ -41,11 +42,11 @@
 @media (min-width: $tablet-width) {
   .geo {
     height: 201px;
-    margin-bottom: 330px;
+    margin-bottom: 0;
   }
 
   .geo__color--toggle {
-    padding-top: 63px;
+    padding-top: 61px;
     background-color: inherit;
   }
 
@@ -78,13 +79,13 @@
 @media (min-width: $desktop-width) {
   .geo {
     position: absolute;
-    margin: 95px 110px;
+    margin: 93px 110px;
     width: 570px;
     height: 201px;
   }
 
   .geo__title {
-    padding-top: 64px;
+    padding-top: 3px;
     padding-left: 5px;
   }
 
@@ -96,7 +97,7 @@
     width: 270px;
     height: 60px;
     padding-left: 90px;
-    padding-top: 63px;
+    padding-top: 3px;
     text-indent: 0;
 
     &--city {

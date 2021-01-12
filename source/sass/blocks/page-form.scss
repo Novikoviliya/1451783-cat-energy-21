@@ -7,6 +7,18 @@
   font-size: 36px;
   line-height: 36px;
   color: $color-black;
+
+  @media (max-width: 767px) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 66px;
+      width: 320px;
+      height: 1px;
+      background: $color-line;
+    }
+  }
 }
 
 .page-form__description {
@@ -45,6 +57,11 @@
 @media (min-width: $desktop-width) {
   .page-form__wrapper {
     padding: 16px 70px;
+  }
+
+  .page-form__description {
+    padding-top: 1px;
+    padding-left: 40px;
   }
 
   .page-form__title {
