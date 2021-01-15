@@ -1,29 +1,66 @@
 .item-title__title {
   margin: 0;
   padding: 0;
-  padding-top: 23px;
+  padding-top: 25px;
   padding-bottom: 34px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   color: $color-black;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    right: -20px;
+    width: 53px;
+    border-bottom: 2px solid $green;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .item-title__title {
     font-size: 36px;
     line-height: 36px;
-    padding-top: 68px;
+    padding-top: 69px;
     padding-left: 37px;
     padding-bottom: 80px;
+
+    &::before {
+      width: 328px;
+      top: 91px;
+      right: -30px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 92px;
+      width: 30px;
+      border-bottom: 2px solid $green;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .item-title__title {
-    padding-top: 28px;
+    padding-top: 29px;
     padding-bottom: 82px;
     padding-left: 0;
+
+    &::after {
+      top: 53px;
+      left: -109px;
+      width: 70px;
+    }
+
+    &::before {
+      top: 53px;
+      right: -109px;
+      width: 957px;
+    }
   }
 }

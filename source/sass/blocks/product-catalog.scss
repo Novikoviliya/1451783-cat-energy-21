@@ -5,12 +5,8 @@
 }
 
 .product-catalog__item {
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   border-top: 1px solid $color-line-variant;
-
-  &:nth-child(even) {
-    margin-top: -2px;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -44,7 +40,7 @@
     width: 100%;
 
     &:nth-last-of-type(3),
-    :nth-last-of-type(4) {
+    &:nth-last-of-type(4) {
       margin-bottom: 0;
     }
   }

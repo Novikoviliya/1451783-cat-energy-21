@@ -10,6 +10,18 @@
   justify-content: center;
 }
 
+.page-footer__logo-icon--title {
+  margin-top: 36px;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__intro {
     display: flex;
@@ -21,6 +33,10 @@
   .page-footer {
     height: 150px;
   }
+
+  .page-footer__logo-icon--title {
+    margin-top: 53px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -30,5 +46,9 @@
 
   .page-footer__logo-icon {
     padding-left: 80px;
+
+    &--title {
+      margin-top: 49px;
+    }
   }
 }

@@ -3,9 +3,23 @@
   display: block;
   padding-top: 23px;
   padding-bottom: 22px;
-  border-bottom: 1px solid $color-line-gray;
+  border-top: 1px solid $color-line-gray;
   color: $color-black;
   text-decoration: none;
+
+  @media (max-width: 767px) {
+    &--color-line {
+      border-bottom: 1px solid $color-line-gray;
+    }
+  }
+}
+
+.site-list__item {
+  position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: 768px) {
@@ -19,6 +33,11 @@
 
   .site-list__link {
     border: none;
+
+    &--color:active {
+      opacity: 0.3;
+      text-decoration-color: $green;
+    }
   }
 
   .site-list__item {

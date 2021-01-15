@@ -3,6 +3,10 @@
   background-color: $color-special-gray;
 }
 
+.map__toggle {
+  background-color: inherit;
+}
+
 @media (min-width: 767px) {
   .map__toggle--color {
     margin-top: 0;
