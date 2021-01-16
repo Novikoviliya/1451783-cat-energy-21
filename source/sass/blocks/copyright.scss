@@ -24,6 +24,18 @@
   margin-top: -7px;
   margin-left: 122px;
 
+  &--icon {
+    stroke: $color-stroke-fb;
+
+    &:hover {
+      stroke: $green;
+    }
+
+    &:active {
+      stroke: $green;
+    }
+  }
+
   &:hover {
     stroke: $green;
   }

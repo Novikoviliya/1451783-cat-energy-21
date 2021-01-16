@@ -55,6 +55,14 @@
 }
 
 .social__link {
+  &--position-fb {
+    stroke: $color-stroke-fb;
+
+    &:hover {
+      stroke: $green;
+    }
+  }
+
   &:hover {
     stroke: $green;
   }
