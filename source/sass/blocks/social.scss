@@ -1,31 +1,129 @@
+.social {
+  position: relative;
+
+  @media (max-width: 767px) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      top: 30px;
+      right: -76px;
+      border-top: 1px solid $color-line;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 30px;
+      right: -76px;
+      width: 280px;
+      border-bottom: 1px solid $color-line;
+    }
+  }
+}
+
 .social__list {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-bottom: 52px;
-  padding-left: 20px;
-  width: 300px;
+  padding-bottom: 48px;
+  padding-left: 0;
+  padding-top: 50px;
+  width: 130px;
 }
 
 .social__item {
   display: block;
-  padding: 0 10px;
+  padding: 0 18px;
+
+  &:first-child {
+    padding-left: 13px;
+  }
+
+  &:nth-child(2) {
+    margin-top: 2px;
+  }
+
+  &:last-child {
+    margin-left: 2px;
+    padding-left: 13px;
+  }
+}
+
+.social__link {
+  &--position-fb {
+    stroke: $color-stroke-fb;
+
+    &:hover {
+      stroke: $green;
+    }
+  }
+
+  &:hover {
+    stroke: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+    stroke: $green;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .social__list {
-    min-width: 350px;
     padding: 0;
+    margin-top: 48px;
+    margin-left: 20px;
+  }
+
+  .social__link {
+    &--position-fb {
+      width: 28px;
+      height: 33px;
+    }
+
+    &--position {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--vk {
+      width: 30px;
+      height: 22px;
+    }
+  }
+
+  .social__item {
+    display: block;
+    padding: 0;
+
+    &:first-child {
+      padding-left: 0;
+      margin-right: 7px;
+      margin-left: 16px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 21px;
+    }
+
+    &:last-child {
+      margin-left: 20px;
+      padding-left: 0;
+      margin-right: 12px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .social__list {
     min-width: 700px;
-    padding: 0 90px;
+    padding: 0;
+    margin-top: 42px;
+    margin-left: 103px;
   }
 }

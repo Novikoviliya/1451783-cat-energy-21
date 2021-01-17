@@ -3,9 +3,23 @@
   display: block;
   padding-top: 23px;
   padding-bottom: 22px;
-  border-bottom: 1px solid $color-line-gray;
+  border-top: 1px solid $color-line-gray;
   color: $color-black;
   text-decoration: none;
+
+  @media (max-width: 767px) {
+    &--color-line {
+      border-bottom: 1px solid $color-line-gray;
+    }
+  }
+}
+
+.site-list__item {
+  position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: 768px) {
@@ -19,6 +33,11 @@
 
   .site-list__link {
     border: none;
+
+    &--color:active {
+      opacity: 0.3;
+      text-decoration-color: $green;
+    }
   }
 
   .site-list__item {
@@ -28,6 +47,33 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+
+    &--active::before {
+      content: "";
+      position: absolute;
+      top: 53px;
+      left: 35px;
+      width: 64px;
+      border-bottom: 2px solid $green;
+    }
+
+    &--active-line::before {
+      content: "";
+      position: absolute;
+      top: 52px;
+      left: 34px;
+      width: 154px;
+      border-bottom: 2px solid $green;
+    }
+
+    &--active-stripe::before {
+      content: "";
+      position: absolute;
+      top: 52px;
+      left: 37px;
+      width: 154px;
+      border-bottom: 2px solid $green;
+    }
   }
 }
 
@@ -47,6 +93,27 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+
+    &--active::before {
+      top: 58px;
+      left: 37px;
+      width: 68px;
+      border-bottom: 2px solid $color-white;
+    }
+
+    &--active-line::before {
+      top: 59px;
+      left: 38px;
+      width: 168px;
+      border-bottom: 2px solid $green;
+    }
+
+    &--active-stripe::before {
+      top: 59px;
+      left: 37px;
+      width: 170px;
+      border-bottom: 2px solid $green;
+    }
   }
 
   .site-list__link {

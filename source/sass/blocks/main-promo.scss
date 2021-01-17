@@ -7,42 +7,34 @@
   text-transform: uppercase;
   color: $color-white;
   text-align: center;
+  margin-bottom: 178px;
 }
 
-.main-promo__wrapper {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 66px;
-    left: 0;
-    right: 0;
+.main-promo__wrapper--image {
+  @media (max-width: 767px) {
     height: 302px;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: top center;
-    z-index: -1;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/index-background-mobile@2x.jpg");
       background-size: cover;
     }
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 66px;
-    left: 0;
-    right: 0;
+.main-promo__wrapper--backdrop {
+  @media (max-width: 767px) {
     height: 302px;
-    z-index: -1;
-    background: $bg-green;
+    background: rgba(104, 183, 56, 0.85);
   }
 }
 
 .main-promo__title {
   padding: 0;
   margin: 0;
+  padding-top: 27px;
   padding-bottom: 23px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -66,12 +58,22 @@
   color: $color-white;
   text-decoration: none;
   background-color: $green;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $color-hover;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-promo {
     padding-top: 3px;
     background: $color-white;
+    margin-bottom: 0;
   }
 
   .main-promo__wrapper {
@@ -85,16 +87,12 @@
     flex-direction: column-reverse;
     color: $color-black;
     text-align: left;
-
-    &::before,
-    &::after {
-      display: none;
-    }
   }
 
   .main-promo__title {
     padding: 0;
     margin: 0;
+    margin-top: 27px;
     padding-left: 117px;
     padding-bottom: 41px;
     font-size: 60px;
@@ -107,7 +105,7 @@
 
   .main-promo__art {
     position: absolute;
-    top: 201px;
+    top: 227px;
     left: 29px;
     z-index: -1;
   }
@@ -155,7 +153,7 @@
 
   .main-promo__title {
     padding-left: 190px;
-    padding-top: 53px;
+    padding-top: 26px;
     padding-bottom: 40px;
   }
 

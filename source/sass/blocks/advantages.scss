@@ -1,6 +1,7 @@
 .advantages {
   padding: 0 20px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .advantages__title {
@@ -22,6 +23,59 @@
 .advantages__item {
   padding-bottom: 27px;
   padding-left: 80px;
+  position: relative;
+
+  &-icon--sheet {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/sheet-mobile.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &-icon--powder {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/powder-mobile.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &-icon--knife {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/knife-mobile.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &-icon--clock {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/clock-mobile.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .advantages__list {
@@ -54,6 +108,17 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 58px;
     row-gap: 245px;
+
+    @media (max-width: 1439px) {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -102px;
+        right: 0;
+        width: 768px;
+        border-bottom: 1px solid $color-line-gray;
+      }
+    }
   }
 
   .advantages__item {
@@ -62,6 +127,90 @@
     margin: 0;
     padding: 0;
     padding-right: 80px;
+
+    &-icon--sheet {
+      &::before {
+        top: -112px;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/sheet-tablet.svg");
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -111px;
+        left: 126px;
+        width: 112px;
+        height: 280px;
+        background-image: url("../img/first-tablet.svg");
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
+    }
+
+    &-icon--powder {
+      &::before {
+        top: -112px;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/powder-tablet.svg");
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -114px;
+        left: 123px;
+        width: 113px;
+        height: 229px;
+        background-image: url("../img/second-tablet.svg");
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
+    }
+
+    &-icon--knife {
+      &::before {
+        top: -112px;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/knife-tablet.svg");
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -114px;
+        left: 125px;
+        width: 232px;
+        height: 280px;
+        background-image: url("../img/three-tablet.svg");
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
+    }
+
+    &-icon--clock {
+      &::before {
+        top: -112px;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/clock-tablet.svg");
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -111px;
+        left: 126px;
+        width: 121px;
+        height: 227px;
+        background-image: url("../img/four-tablet.svg");
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
+    }
   }
 
   .advantages__description--shadow {
