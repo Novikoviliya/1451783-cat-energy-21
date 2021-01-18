@@ -2,39 +2,55 @@
   background-color: $bg-gray;
 }
 
+.example__position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .example__title {
   margin: 0;
-  padding: 26px 20px;
+  padding: 26px 0;
+  padding-right: 85px;
   padding-bottom: 35px;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
   color: $color-black;
+  text-align: center;
 }
 
 .example__description {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   padding-bottom: 26px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
+  width: 280px;
 }
 
 .example__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
   padding-bottom: 21px;
   list-style: none;
   text-align: center;
+  &:first-child {
+    margin-right: 20px;
+  }
 }
 
 .example__item {
+  &--position {
+    margin-right: 33px;
+  }
   padding: 15px 20px;
+  margin: 0;
   width: 124px;
   height: 56px;
   border: 1px solid $color-additional;
@@ -73,7 +89,6 @@
   text-transform: uppercase;
   color: $color-black;
   text-align: center;
-
   &--shadow {
     display: none;
   }
@@ -118,7 +133,6 @@
   padding: 0;
   width: 228px;
   padding-top: 28px;
-
   @media (max-width: 767px) {
     margin-bottom: 31px;
   }
@@ -160,31 +174,31 @@
   .example {
     background-color: $color-white;
   }
-
+  .example__inner {
+    width: 768px;
+  }
   .example__title {
-    padding: 0 30px;
+    padding: 2px 0;
+    margin-left: -383px;
     font-size: 60px;
     line-height: 60px;
   }
-
   .example__description {
     padding: 0;
-    padding-top: 64px;
+    padding-top: 62px;
     padding-bottom: 54px;
     padding-right: 20px;
     font-size: 16px;
     line-height: 24px;
+    width: 708px;
   }
-
   .example__value {
     font-size: 30px;
     line-height: 37px;
   }
-
   .example__list {
     margin: 0;
   }
-
   .example__item {
     width: 162px;
     height: 72px;
@@ -194,7 +208,6 @@
     padding-left: 26px;
     padding-right: 24px;
   }
-
   .example__item-description {
     padding-right: 2px;
     padding-left: 0;
@@ -202,13 +215,11 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $color-white;
-
     &--day {
       width: 150px;
       margin-left: -20px;
     }
   }
-
   .example__spent {
     display: flex;
     flex-direction: column;
@@ -218,52 +229,56 @@
     padding-top: 11px;
     font-size: 20px;
     line-height: 20px;
-
-    &--down {
+    &-down {
       padding-top: 9px;
       padding-left: 84px;
     }
   }
-
   .example__wrapper {
     padding: 0 30px;
   }
-
   .example__slim {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 60px;
   }
-
   .example__item:last-child {
     margin-left: 40px;
   }
-
   .example__cat-wrapper {
-    margin-top: 235px;
+    margin-top: 174px;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
+    min-width: 768px;
     height: 462px;
     background-color: $bg-gray;
+    @media (max-width: 1439px) {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -621px;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px solid $color-line-gray;
+      }
+    }
   }
-
   .example__progress-bar {
     padding: 0;
     width: 570px;
     margin-top: -59px;
   }
-
   .example__fat {
     margin-top: -13px;
     margin-left: -7px;
     font-size: 20px;
     line-height: 30px;
     position: relative;
-
     &::before {
       content: "";
       position: absolute;
@@ -272,24 +287,20 @@
       border-bottom: 1px dotted $color-black;
       opacity: 0.24;
     }
-
     &:hover::before {
       opacity: 0.4;
       border-bottom: 1px solid $color-black;
     }
-
     &:active::before {
       border: none;
     }
   }
-
   .example__bony {
     margin-top: -13px;
     margin-right: -5px;
     font-size: 20px;
     line-height: 30px;
     position: relative;
-
     &::before {
       content: "";
       position: absolute;
@@ -299,17 +310,14 @@
       border-bottom: 1px dotted $color-black;
       opacity: 0.24;
     }
-
     &:hover::before {
       opacity: 0.4;
       border-bottom: 1px solid $color-black;
     }
-
     &:active::before {
       border: none;
     }
   }
-
   .example__scale {
     align-items: center;
     justify-content: center;
@@ -318,7 +326,6 @@
     height: 6px;
     background-color: $color-additional;
   }
-
   .example__scale-run {
     width: 34px;
     height: 34px;
@@ -329,7 +336,6 @@
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     outline: none;
     position: relative;
-
     &::before {
       content: "";
       position: absolute;
@@ -340,18 +346,15 @@
       left: 13px;
       border-radius: 40%;
     }
-
     &:active {
       border: 1px solid $green;
     }
   }
-
   .example__cat-fat-wrapper-art {
     margin-top: -221px;
     padding-right: 0;
     padding-left: 2px;
   }
-
   .example__cat-slim-wrapper-art {
     position: absolute;
     left: 137px;
@@ -362,43 +365,39 @@
 @media (min-width: $desktop-width) {
   .example {
     padding: 0;
+    min-width: 1440px;
   }
-
   .example__inner {
+    width: 1280px;
     height: 462px;
   }
-
   .example__title {
+    margin: 0;
     padding-left: 110px;
-    padding-top: 56px;
+    padding-top: 55px;
     padding-bottom: 76px;
+    text-align: left;
   }
-
   .example__description {
-    padding: 69px 80px;
-    padding-right: 184px;
+    padding: 69px 0;
+    width: 436px;
   }
-
   .example__slim {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
-
   .example__cat-wrapper {
-    align-items: center;
-    justify-content: space-between;
+    margin-left: auto;
     padding-bottom: 0;
-    height: 0;
+    margin-top: -102px;
   }
-
   .example__cat-fat-wrapper-art {
     position: absolute;
-    top: -226px;
-    left: -80px;
+    bottom: 135px;
+    left: 6px;
   }
-
   .example__position {
     display: flex;
     align-content: flex-start;
@@ -406,45 +405,34 @@
     height: 462px;
     background-color: $bg-gray;
   }
-
   .example__item {
     padding-top: 14px;
-    margin-left: 80px;
     margin-right: 2px;
   }
-
   .example__item-description {
     background-color: $bg-gray;
-
     &--day {
       padding-right: 6px;
     }
   }
-
   .example__spent {
     flex-direction: row;
-    padding: 39px 80px;
-
-    &--down {
+    padding: 39px 0;
+    &-down {
       padding: 0 63px;
     }
   }
-
   .example__progress-bar {
     padding: 0 2px;
-    margin-right: 112px;
-    margin-top: 133px;
+    margin-right: 26px;
   }
-
   .example__bony {
     margin-top: -8px;
     margin-right: -9px;
   }
-
   .example__fat {
     margin-top: -8px;
   }
-
   .example__scale {
     margin: 5px 0;
   }

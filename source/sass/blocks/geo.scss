@@ -22,7 +22,7 @@
   text-transform: uppercase;
 }
 
-.geo__color--toggle {
+.geo__color {
   background-color: inherit;
 }
 
@@ -41,15 +41,14 @@
 
 @media (min-width: $tablet-width) {
   .geo {
+    width: 768px;
     height: 201px;
     margin-bottom: 0;
   }
-
-  .geo__color--toggle {
+  .geo__color {
     padding-top: 61px;
     background-color: inherit;
   }
-
   .geo__title {
     width: 171px;
     height: 74px;
@@ -58,7 +57,6 @@
     font-size: 20px;
     line-height: 25px;
   }
-
   .geo__description {
     width: 159px;
     height: 80px;
@@ -67,8 +65,7 @@
     font-size: 16px;
     line-height: 20px;
     text-indent: 60px;
-
-    &--city {
+    &-city {
       display: inline-block;
       margin-top: 20px;
       text-indent: 28px;
@@ -78,29 +75,26 @@
 
 @media (min-width: $desktop-width) {
   .geo {
+    margin-top: -14px;
     position: absolute;
-    margin: 93px 110px;
+    left: 110px;
     width: 570px;
     height: 201px;
   }
-
   .geo__title {
     padding-top: 3px;
     padding-left: 5px;
   }
-
-  .geo__color--toggle {
+  .geo__color {
     background-color: $color-white;
   }
-
   .geo__description {
     width: 270px;
     height: 60px;
     padding-left: 90px;
     padding-top: 3px;
     text-indent: 0;
-
-    &--city {
+    &-city {
       text-indent: 0;
     }
   }

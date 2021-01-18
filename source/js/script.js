@@ -6,11 +6,11 @@ menuToggle.addEventListener("click", function() {
   if (nav.classList.contains("site-list")) {
     nav.classList.remove("site-list");
   } else { nav.classList.add("site-list"); }
-  if (main.classList.contains("main-nav__menu--opened")) {
-    main.classList.remove("main-nav__menu--opened");
-    main.classList.add("main-nav__menu--closed");
+  if (main.classList.contains("main-nav--opened")) {
+    main.classList.remove("main-nav--opened");
+    main.classList.add("main-nav--closed");
   } else {
-    main.classList.remove("main-nav__menu--closed");
-    main.classList.add("main-nav__menu--opened");
+    main.classList.remove("main-nav--closed");
+    main.classList.add("main-nav--opened");
   }
 });

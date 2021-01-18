@@ -4,9 +4,13 @@
   list-style: none;
 }
 
+.additional-goods__position {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .additional-goods__item {
   border-top: 1px solid $color-line-variant;
-
   &:last-child {
     border-bottom: 1px solid $color-line-variant;
     padding-top: 0;
@@ -17,13 +21,15 @@
   .additional-goods__list {
     border: 1px solid $color-additional;
   }
-
+  .additional-goods__position {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
   .additional-goods__item {
     margin-bottom: 26px;
     padding-top: 12px;
     padding-left: 37px;
     padding-right: 34px;
-
     &:last-child {
       padding-top: 14px;
       border-bottom: 0;
@@ -35,24 +41,25 @@
   .additional-goods__list {
     border: 0;
   }
-
   .additional-goods__item {
     margin: 0;
     padding: 0;
     margin-bottom: 14px;
-
     &:last-child {
       padding-top: 0;
       padding-bottom: 13px;
       border-bottom: 1px solid $color-line-variant;
     }
   }
-
   .additional-goods__intro {
     display: flex;
     justify-content: space-between;
   }
-
+  .additional-goods__position {
+    margin: 0 auto;
+    padding: 0 25px;
+    width: 1270px;
+  }
   .additional-goods__wrapper {
     width: 896px;
     text-align: left;

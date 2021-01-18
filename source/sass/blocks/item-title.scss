@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
   padding-top: 25px;
-  padding-bottom: 34px;
+  padding-bottom: 33px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   color: $color-black;
   position: relative;
-
   &::before {
     content: "";
     position: absolute;
@@ -27,13 +26,11 @@
     padding-top: 69px;
     padding-left: 37px;
     padding-bottom: 80px;
-
     &::before {
       width: 328px;
       top: 91px;
       right: -30px;
     }
-
     &::after {
       content: "";
       position: absolute;
@@ -50,16 +47,14 @@
     padding-top: 29px;
     padding-bottom: 82px;
     padding-left: 0;
-
     &::after {
       top: 53px;
       left: -109px;
       width: 70px;
     }
-
     &::before {
       top: 53px;
-      right: -109px;
+      right: -110px;
       width: 957px;
     }
   }

@@ -6,7 +6,6 @@
   border-top: 1px solid $color-line-gray;
   color: $color-black;
   text-decoration: none;
-
   @media (max-width: 767px) {
     &--color-line {
       border-bottom: 1px solid $color-line-gray;
@@ -16,7 +15,6 @@
 
 .site-list__item {
   position: relative;
-
   &:hover {
     opacity: 0.6;
   }
@@ -26,51 +24,48 @@
   .site-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 31px;
+    padding: 19px 0;
+    padding-left: 13px;
   }
-
   .site-list__link {
     border: none;
-
     &--color:active {
       opacity: 0.3;
       text-decoration-color: $green;
     }
   }
-
   .site-list__item {
     display: block;
-    padding-left: 35px;
+    padding: 0 17px;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-
+    &:last-child {
+      padding-left: 20px;
+    }
     &--active::before {
       content: "";
       position: absolute;
-      top: 53px;
-      left: 35px;
+      top: 54px;
+      left: 18px;
       width: 64px;
       border-bottom: 2px solid $green;
     }
-
     &--active-line::before {
       content: "";
       position: absolute;
-      top: 52px;
-      left: 34px;
+      top: 53px;
+      left: 17px;
       width: 154px;
       border-bottom: 2px solid $green;
     }
-
     &--active-stripe::before {
       content: "";
       position: absolute;
-      top: 52px;
-      left: 37px;
+      top: 53px;
+      left: 20px;
       width: 154px;
       border-bottom: 2px solid $green;
     }
@@ -85,41 +80,42 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    padding: 13px 80px;
+    padding: 14px 80px;
   }
-
   .site-list__item {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-
+    &:last-child {
+      padding-left: 16px;
+      padding-right: 0;
+    }
+    &:first-child {
+      margin-right: 2px;
+    }
     &--active::before {
       top: 58px;
-      left: 37px;
+      left: 20px;
       width: 68px;
       border-bottom: 2px solid $color-white;
     }
-
     &--active-line::before {
       top: 59px;
-      left: 38px;
+      left: 18px;
       width: 168px;
       border-bottom: 2px solid $green;
     }
-
     &--active-stripe::before {
-      top: 59px;
-      left: 37px;
+      top: 60px;
+      left: 18px;
       width: 170px;
       border-bottom: 2px solid $green;
     }
   }
-
   .site-list__link {
     color: $color-white;
   }
-
   .site-list__link--color {
     color: $color-special-black;
   }

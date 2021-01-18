@@ -1,12 +1,13 @@
 .copyright {
   display: flex;
-  align-self: flex-start;
-  justify-self: flex-start;
+  align-self: center;
+  justify-self: center;
 }
 
 .copyright__link {
   margin: 0;
-  padding: 0 19px;
+  padding: 0;
+  margin-left: -2px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -14,7 +15,6 @@
   line-height: 18px;
   color: $color-dark-gray;
   text-decoration: none;
-
   &:active {
     opacity: 0.3;
   }
@@ -22,24 +22,19 @@
 
 .copyright__logo {
   margin-top: -7px;
-  margin-left: 122px;
-
-  &--icon {
+  margin-left: 140px;
+  &-icon {
     stroke: $color-stroke-fb;
-
     &:hover {
       stroke: $green;
     }
-
     &:active {
       stroke: $green;
     }
   }
-
   &:hover {
     stroke: $green;
   }
-
   &:active {
     opacity: 0.3;
     stroke: $green;
@@ -50,13 +45,11 @@
   .copyright {
     padding: 0;
   }
-
   .copyright__link {
     padding: 0;
     margin-top: 57px;
     margin-right: -16px;
   }
-
   .copyright__logo {
     margin-top: 50px;
     margin-left: 39px;
@@ -66,6 +59,6 @@
 
 @media (min-width: $desktop-width) {
   .copyright {
-    padding: 6px 80px;
+    padding: 7px 39px;
   }
 }

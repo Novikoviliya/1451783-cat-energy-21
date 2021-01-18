@@ -6,14 +6,13 @@
   height: 289px;
   text-align: center;
   margin-bottom: 34px;
-
   @media (min-resolution: 144dpi), (min-width: 1440px), (min-resolution: 1.5dppx), (min-width: 1440px) {
     background-image: url("../img/gift-photo-desktop@2x.png");
     background-size: cover;
   }
 }
 
-.special__wrapper--icon {
+.special__wrapper-icon {
   margin-top: 58px;
 }
 
@@ -39,14 +38,12 @@
     background-repeat: no-repeat;
     margin-bottom: 77px;
   }
-
   .special__description {
     text-align: left;
     padding-left: 423px;
     padding-top: 72px;
   }
-
-  .special__wrapper--icon {
+  .special__wrapper-icon {
     margin-top: 58px;
     position: absolute;
     left: 109px;
@@ -62,14 +59,12 @@
     background-repeat: no-repeat;
     margin-bottom: 84px;
   }
-
   .special__description {
     padding-left: 0;
     text-align: center;
     padding-top: 186px;
   }
-
-  .special__wrapper--icon {
+  .special__wrapper-icon {
     margin-top: 56px;
     left: 1170px;
   }
