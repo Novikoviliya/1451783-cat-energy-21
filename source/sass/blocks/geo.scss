@@ -45,10 +45,12 @@
     height: 201px;
     margin-bottom: 0;
   }
+
   .geo__color {
     padding-top: 61px;
     background-color: inherit;
   }
+
   .geo__title {
     width: 171px;
     height: 74px;
@@ -57,6 +59,7 @@
     font-size: 20px;
     line-height: 25px;
   }
+
   .geo__description {
     width: 159px;
     height: 80px;
@@ -65,6 +68,7 @@
     font-size: 16px;
     line-height: 20px;
     text-indent: 60px;
+
     &-city {
       display: inline-block;
       margin-top: 20px;
@@ -81,19 +85,23 @@
     width: 570px;
     height: 201px;
   }
+
   .geo__title {
     padding-top: 3px;
     padding-left: 5px;
   }
+
   .geo__color {
     background-color: $color-white;
   }
+
   .geo__description {
     width: 270px;
     height: 60px;
     padding-left: 90px;
     padding-top: 3px;
     text-indent: 0;
+
     &-city {
       text-indent: 0;
     }

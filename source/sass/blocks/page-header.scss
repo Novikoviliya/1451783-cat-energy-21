@@ -21,16 +21,20 @@
 .page-header__logo {
   text-decoration: none;
   position: relative;
+
   &-image {
     margin-top: 12px;
     margin-left: -20px;
+
     &:hover {
       opacity: 0.8;
     }
+
     &:active {
       opacity: 0.6;
     }
   }
+
   &-title {
     position: absolute;
     top: -2px;
@@ -45,17 +49,20 @@
     justify-content: space-between;
     width: 768px;
   }
+
   .page-header__wrapper {
     padding-top: 24px;
     padding-left: 0;
     margin-left: 10px;
     border: none;
   }
+
   .page-header__logo {
     &-image {
       margin-top: 0;
       margin-left: 20px;
     }
+
     &-title {
       display: none;
     }
@@ -68,8 +75,10 @@
     padding: 33px 30px;
     width: 1440px;
   }
+
   .page-header__index-page--color {
     z-index: 1;
+
     &::before {
       content: "";
       position: absolute;
@@ -82,6 +91,7 @@
       background-position: right top;
       z-index: -1;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -93,10 +103,12 @@
       z-index: -1;
     }
   }
+
   .page-header__wrapper--bar {
     padding-top: 20px;
     padding-left: 70px;
   }
+
   .page-header__logo {
     &-image {
       margin-top: 0;

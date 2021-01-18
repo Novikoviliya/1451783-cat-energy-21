@@ -25,6 +25,7 @@
   padding-bottom: 27px;
   padding-left: 80px;
   position: relative;
+
   &-sheet {
     &::before {
       content: "";
@@ -37,6 +38,7 @@
       background-repeat: no-repeat;
     }
   }
+
   &-powder {
     &::before {
       content: "";
@@ -49,6 +51,7 @@
       background-repeat: no-repeat;
     }
   }
+
   &-knife {
     &::before {
       content: "";
@@ -61,6 +64,7 @@
       background-repeat: no-repeat;
     }
   }
+
   &-clock {
     &::before {
       content: "";
@@ -94,23 +98,27 @@
     margin-bottom: 145px;
     width: 710px;
   }
+
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
     padding-bottom: 156px;
   }
+
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 58px;
     row-gap: 244px;
   }
+
   .advantages__item {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
     padding: 0;
     padding-right: 0;
+
     &-sheet {
       &::before {
         top: -112px;
@@ -118,6 +126,7 @@
         height: 80px;
         background-image: url("../img/sheet-tablet.svg");
       }
+
       &::after {
         content: "";
         position: absolute;
@@ -130,6 +139,7 @@
         z-index: -1;
       }
     }
+
     &-powder {
       &::before {
         top: -112px;
@@ -137,6 +147,7 @@
         height: 80px;
         background-image: url("../img/powder-tablet.svg");
       }
+
       &::after {
         content: "";
         position: absolute;
@@ -149,6 +160,7 @@
         z-index: -1;
       }
     }
+
     &-knife {
       &::before {
         top: -112px;
@@ -156,6 +168,7 @@
         height: 80px;
         background-image: url("../img/knife-tablet.svg");
       }
+
       &::after {
         content: "";
         position: absolute;
@@ -168,6 +181,7 @@
         z-index: -1;
       }
     }
+
     &-clock {
       &::before {
         top: -112px;
@@ -175,6 +189,7 @@
         height: 80px;
         background-image: url("../img/clock-tablet.svg");
       }
+
       &::after {
         content: "";
         position: absolute;
@@ -188,9 +203,11 @@
       }
     }
   }
+
   .advantages__description--shadow {
     display: block;
   }
+
   .advantages__description {
     width: 245px;
   }
@@ -202,15 +219,18 @@
     margin-bottom: 70px;
     width: 1220px;
   }
+
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 78px;
     row-gap: 20px;
   }
+
   .advantages__item {
     padding: 0;
   }
+
   .advantages__title {
     padding-top: 2px;
   }

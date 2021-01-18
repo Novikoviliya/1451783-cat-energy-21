@@ -1,5 +1,6 @@
 .social {
   position: relative;
+
   @media (max-width: 767px) {
     &::before {
       content: "";
@@ -9,6 +10,7 @@
       right: -76px;
       border-top: 1px solid $color-line;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -37,12 +39,15 @@
 .social__item {
   display: block;
   padding: 0 18px;
+
   &:first-child {
     padding-left: 13px;
   }
+
   &:nth-child(2) {
     margin-top: 2px;
   }
+
   &:last-child {
     margin-left: 2px;
     padding-left: 13px;
@@ -53,9 +58,11 @@
   &-fb {
     stroke: $color-stroke-fb;
   }
+
   &:hover {
     stroke: $green;
   }
+
   &:active {
     opacity: 0.3;
     stroke: $green;
@@ -68,31 +75,38 @@
     margin-top: 49px;
     margin-left: 20px;
   }
+
   .social__link {
     &-instagram--icon {
       width: 23px;
       height: 23px;
     }
+
     &-fb--icon {
       width: 28px;
       height: 33px;
     }
+
     &-vk--icon {
       width: 30px;
       height: 22px;
     }
   }
+
   .social__item {
     display: block;
     padding: 0;
+
     &:first-child {
       padding-left: 0;
       margin-right: 7px;
       margin-left: 16px;
     }
+
     &:nth-child(2) {
       margin-left: 21px;
     }
+
     &:last-child {
       margin-left: 20px;
       padding-left: 0;
@@ -107,6 +121,7 @@
     margin-top: 41px;
     margin-left: 59px;
   }
+
   .social__item {
     &:nth-child(2) {
       margin-left: 19px;

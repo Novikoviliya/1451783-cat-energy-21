@@ -9,6 +9,7 @@
   color: $color-black;
   padding-top: 27px;
   padding-right: 21px;
+
   @media (max-width: 767px) {
     &::before {
       content: "";
@@ -48,6 +49,7 @@
     padding: 0 30px;
     width: 768px;
   }
+
   .page-form__title {
     padding-top: 34px;
     padding-bottom: 55px;
@@ -55,6 +57,7 @@
     font-size: 60px;
     line-height: 60px;
   }
+
   .page-form__description {
     padding-bottom: 65px;
     padding-right: 308px;
@@ -68,10 +71,12 @@
     padding: 16px 70px;
     width: 1440px;
   }
+
   .page-form__description {
     padding-top: 2px;
     margin-right: 590px;
   }
+
   .page-form__title {
     margin-right: 590px;
     padding-top: 2px;

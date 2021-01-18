@@ -9,6 +9,7 @@
   line-height: 24px;
   color: $color-black;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -26,11 +27,13 @@
     padding-top: 69px;
     padding-left: 37px;
     padding-bottom: 80px;
+
     &::before {
       width: 328px;
       top: 91px;
       right: -30px;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -47,11 +50,13 @@
     padding-top: 29px;
     padding-bottom: 82px;
     padding-left: 0;
+
     &::after {
       top: 53px;
       left: -109px;
       width: 70px;
     }
+
     &::before {
       top: 53px;
       right: -110px;

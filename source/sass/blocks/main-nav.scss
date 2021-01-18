@@ -1,9 +1,11 @@
 .main-nav {
   position: relative;
   width: 320px;
+
   @media (min-width: $tablet-width) {
     width: 500px;
   }
+
   @media (min-width: $desktop-width) {
     width: 657px;
   }
@@ -27,6 +29,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -60,6 +63,7 @@
     background-color: $color-black;
     transform: rotate(135deg);
   }
+
   &::after {
     content: "";
     position: absolute;

@@ -14,6 +14,7 @@
   width: 280px;
   height: 266px;
   background-color: $color-special-gray;
+
   &--slim::before {
     content: "";
     position: absolute;
@@ -24,8 +25,10 @@
     background-image: url("../img/cat-slim.svg");
     background-repeat: no-repeat;
   }
+
   &--fat {
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -37,6 +40,7 @@
       background-repeat: no-repeat;
     }
   }
+
   &:first-child {
     margin-bottom: 20px;
   }
@@ -65,6 +69,7 @@
   font-family: "Arial", sans-serif;
   color: $color-dark-gray;
   position: relative;
+
   @media (max-width: 767px) {
     &::before {
       content: "";
@@ -84,6 +89,7 @@
   color: $color-black;
   text-decoration: none;
   position: relative;
+
   &--arrow::before {
     content: "";
     position: absolute;
@@ -94,6 +100,7 @@
     background-image: url("../img/icon_arrow.svg");
     background-repeat: no-repeat;
   }
+
   &--dart::before {
     content: "";
     position: absolute;
@@ -104,6 +111,7 @@
     background-image: url("../img/icon_arrow.svg");
     background-repeat: no-repeat;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -116,6 +124,7 @@
     padding: 0 30px;
     padding-bottom: 46px;
   }
+
   .regimen-cards__title {
     font-size: 36px;
     line-height: 36px;
@@ -123,6 +132,7 @@
     padding-top: 78px;
     padding-bottom: 25px;
   }
+
   .regimen-cards__description {
     font-size: 16px;
     line-height: 24px;
@@ -130,22 +140,27 @@
     padding-right: 275px;
     padding-bottom: 52px;
   }
+
   .regimen-cards__link {
     font-size: 20px;
     line-height: 30px;
     padding-left: 33px;
+
     &--dart::before {
       top: 9px;
       left: 160px;
     }
+
     &--arrow::before {
       top: 9px;
       left: 165px;
     }
   }
+
   .regimen-cards__item {
     min-width: 708px;
     min-height: 372px;
+
     &--slim::before {
       left: 446px;
       top: 83px;
@@ -153,6 +168,7 @@
       height: 211px;
       background-image: url("../img/cat-slim-tablet.svg");
     }
+
     &--fat::before {
       left: 412px;
       top: 92px;
@@ -160,9 +176,11 @@
       height: 200px;
       background-image: url("../img/cat-fat-tablet.svg");
     }
+
     &:first-child {
       margin-bottom: 30px;
     }
+
     &:last-child {
       padding-right: 40px;
     }
@@ -174,13 +192,16 @@
     padding: 0 110px;
     padding-bottom: 40px;
   }
+
   .regimen-cards__list {
     display: flex;
     flex-direction: row;
   }
+
   .regimen-cards__item {
     min-width: 570px;
     min-height: 374px;
+
     &--slim::before {
       left: 52px;
       top: 41px;
@@ -189,6 +210,7 @@
       background-image: url("../img/cat-slim-desktop.svg");
       background-repeat: no-repeat;
     }
+
     &--fat::before {
       left: 33px;
       top: 47px;
@@ -197,24 +219,29 @@
       background-image: url("../img/cat-fat-desktop.svg");
       background-repeat: no-repeat;
     }
+
     &:last-child {
       margin-left: 80px;
       padding-right: 0;
     }
   }
+
   .regimen-cards__title {
     padding-left: 214px;
     padding-bottom: 74px;
   }
+
   .regimen-cards__description {
     padding-right: 30px;
     padding-bottom: 26px;
   }
+
   .regimen-cards__link {
     &--dart::before {
       top: 9px;
       left: 162px;
     }
+
     &--arrow::before {
       top: 9px;
       left: 168px;

@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 8px;
+
     &-line::before {
       content: "";
       position: absolute;
@@ -27,6 +28,7 @@
       width: 100%;
       border-bottom: 1px solid $color-line;
     }
+
     &-line--bottom::before {
       content: "";
       position: absolute;
@@ -48,6 +50,7 @@
   font-size: 24px;
   line-height: 26px;
   color: $color-black;
+
   &--bar::before {
     content: "";
     position: absolute;
@@ -56,6 +59,7 @@
     width: 99px;
     border-bottom: 2px solid $green;
   }
+
   &--stripe::before {
     content: "";
     position: absolute;
@@ -64,6 +68,7 @@
     width: 158px;
     border-bottom: 2px solid $green;
   }
+
   &--stria::before {
     content: "";
     position: absolute;
@@ -72,6 +77,7 @@
     width: 136px;
     border-bottom: 2px solid $green;
   }
+
   &--size {
     padding-top: 22px;
     padding-bottom: 41px;
@@ -123,6 +129,7 @@
   padding-left: 47px;
   padding-right: 57px;
   padding-bottom: 26px;
+
   &:last-child {
     padding-right: 97px;
   }
@@ -136,23 +143,28 @@
     height: 196px;
     border: 1px solid $color-border;
   }
+
   .request__position {
     margin-left: 40px;
   }
+
   .request__position--email {
     margin-top: 30px;
   }
+
   .request__title-line {
     padding-top: 76px;
     padding-left: 40px;
     padding-bottom: 39px;
     font-size: 36px;
     line-height: 36px;
+
     &--bar::before {
       top: 98px;
       left: -29px;
       width: 30px;
     }
+
     &--bar::after {
       content: "";
       position: absolute;
@@ -161,11 +173,13 @@
       width: 145px;
       border-bottom: 2px solid $green;
     }
+
     &--stripe::before {
       top: 22px;
       right: -29px;
       width: 478px;
     }
+
     &--stripe::after {
       content: "";
       position: absolute;
@@ -174,11 +188,13 @@
       width: 30px;
       border-bottom: 2px solid $green;
     }
+
     &--stria::before {
       top: 85px;
       right: -30px;
       width: 446px;
     }
+
     &--stria::after {
       content: "";
       position: absolute;
@@ -187,16 +203,19 @@
       width: 30px;
       border-bottom: 2px solid $green;
     }
+
     &--size {
       padding-top: 64px;
       padding-bottom: 62px;
     }
   }
+
   .request__position-phone {
     padding-left: 39px;
     padding-top: 5px;
     padding-bottom: 43px;
   }
+
   .request__textarea {
     width: 631px;
     height: 174px;
@@ -208,6 +227,7 @@
     margin-top: 75px;
     border: 1px solid $color-border;
   }
+
   .request__info-edit {
     display: flex;
     flex-wrap: wrap;
@@ -216,6 +236,7 @@
     width: 630px;
     height: 140px;
   }
+
   .request__info-edit--control {
     display: flex;
     flex-wrap: wrap;
@@ -224,14 +245,17 @@
     width: 630px;
     height: 146px;
   }
+
   .request__write-down {
     display: block;
     padding-left: 99px;
     padding-right: 59px;
+
     &:last-child {
       padding-right: 97px;
     }
   }
+
   .request__button {
     width: 282px;
     height: 52px;
@@ -240,6 +264,7 @@
     margin-left: 40px;
     margin-top: 15px;
   }
+
   .request__text {
     font-size: 16px;
     line-height: 16px;
@@ -253,6 +278,7 @@
     display: flex;
     flex-direction: row;
   }
+
   .request__field--border {
     width: 570px;
     height: 196px;
@@ -260,70 +286,85 @@
     padding-top: 16px;
     margin-left: 80px;
   }
+
   .request__title-line {
     padding-top: 51px;
+
     &--bar::before {
       top: 72px;
       left: -70px;
       width: 70px;
     }
+
     &--bar::after {
       top: 72px;
       right: -70px;
       width: 778px;
     }
+
     &--stripe::before {
       top: 22px;
       right: -70px;
       width: 1108px;
     }
+
     &--stripe::after {
       top: 22px;
       left: -70px;
       width: 70px;
     }
+
     &--stria::before {
       top: 86px;
       right: -70px;
       width: 1078px;
     }
+
     &--stria::after {
       top: 86px;
       left: -70px;
       width: 70px;
     }
+
     &--size {
       padding-top: 64px;
       padding-bottom: 62px;
     }
   }
+
   .request__position-phone {
     padding-top: 20px;
     padding-left: 79px;
     padding-bottom: 42px;
   }
+
   .request__textarea {
     width: 1220px;
     height: 174px;
     padding-top: 9px;
   }
+
   .request__info-edit--control {
     display: grid;
     grid-template-columns: repeat(4, 326px);
     margin-left: 1px;
   }
+
   .request__write-down {
     padding: 0 98px;
+
     &:last-child {
       padding-left: 99px;
     }
   }
+
   .request__button {
     width: 568px;
     height: 52px;
     margin-top: 16px;
     margin-left: 41px;
   }
+
   .request__info-edit {
     display: flex;
     justify-content: flex-start;
@@ -331,14 +372,17 @@
     width: 100%;
     height: 80px;
   }
+
   .request__text {
     padding-top: 18px;
     padding-left: 81px;
   }
+
   .request__position--email {
     margin-top: 27px;
     margin-bottom: 68px;
   }
+
   .request__info-position {
     margin-bottom: 150px;
   }

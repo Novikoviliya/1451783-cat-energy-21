@@ -19,9 +19,11 @@
 
 .page-footer__logo-icon--position {
   margin-top: 36px;
+
   &:hover {
     opacity: 0.85;
   }
+
   &:active {
     opacity: 0.6;
   }
@@ -33,15 +35,18 @@
     flex-direction: row;
     padding: 0;
   }
+
   .page-footer {
     height: 150px;
   }
+
   .page-footer__position {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 708px;
   }
+
   .page-footer__logo-icon--position {
     margin-top: 56px;
   }
@@ -51,11 +56,14 @@
   .page-footer {
     height: 149px;
   }
+
   .page-footer__position {
     width: 1300px;
   }
+
   .page-footer__logo-icon {
     padding-left: 40px;
+
     &--position {
       margin-top: 46px;
     }

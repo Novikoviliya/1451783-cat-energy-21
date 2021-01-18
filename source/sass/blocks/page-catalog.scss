@@ -16,6 +16,7 @@
   font-size: 36px;
   line-height: 36px;
   color: $color-black;
+
   @media (max-width: 767px) {
     &::before {
       content: "";
@@ -33,6 +34,7 @@
   .page-catalog {
     width: 768px;
   }
+
   .page-catalog__title {
     padding-top: 34px;
     padding-bottom: 84px;
@@ -48,6 +50,7 @@
   .page-catalog {
     width: 1440px;
   }
+
   .page-catalog__title {
     padding-top: 19px;
     text-align: left;
