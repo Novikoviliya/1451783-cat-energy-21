@@ -1,5 +1,6 @@
 .example {
   background-color: $bg-gray;
+  width: 100%;
 }
 
 .example__position {
@@ -7,6 +8,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+}
+
+.example__inner {
+  width: 280px;
+}
+
+.example__cat-fat-wrapper-art {
+  margin-top: 20px;
+  margin-left: -4px;
+}
+
+.example__cat-fat-wrapper {
+  width: 311px;
 }
 
 .example__title {
@@ -102,11 +117,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-}
-
-.example__cat-fat-wrapper-art {
-  padding-top: 18px;
-  padding-right: 5px;
+  margin-bottom: 1px;
 }
 
 .example__cat-slim-wrapper-art {
@@ -175,7 +186,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-color: $color-white;
+    background: linear-gradient(to bottom, $color-white 55.5%, $bg-gray 50%);
   }
 
   .example__inner {
@@ -270,15 +281,12 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
-    min-width: 768px;
-    height: 462px;
-    background-color: $bg-gray;
 
     @media (max-width: 1439px) {
       &::before {
         content: "";
         position: absolute;
-        top: -621px;
+        top: -562px;
         right: 0;
         width: 100%;
         height: 1px;
@@ -290,7 +298,8 @@
   .example__progress-bar {
     padding: 0;
     width: 570px;
-    margin-top: -59px;
+    margin-top: 25px;
+    margin-bottom: 48px;
   }
 
   .example__fat {
@@ -383,9 +392,13 @@
   }
 
   .example__cat-fat-wrapper-art {
-    margin-top: -221px;
+    margin-top: -114px;
     padding-right: 0;
-    padding-left: 2px;
+    padding-left: 50px;
+  }
+
+  .example__cat-fat-wrapper {
+    width: 768px;
   }
 
   .example__cat-slim-wrapper-art {
@@ -398,7 +411,7 @@
 @media (min-width: $desktop-width) {
   .example {
     padding: 0;
-    min-width: 1440px;
+    width: 100%;
   }
 
   .example__inner {
@@ -408,10 +421,9 @@
 
   .example__title {
     margin: 0;
-    padding-left: 110px;
+    margin-right: 895px;
     padding-top: 55px;
     padding-bottom: 76px;
-    text-align: left;
   }
 
   .example__description {
@@ -434,8 +446,8 @@
 
   .example__cat-fat-wrapper-art {
     position: absolute;
-    bottom: 135px;
-    left: 6px;
+    bottom: 112px;
+    left: 554px;
   }
 
   .example__position {
@@ -470,7 +482,8 @@
 
   .example__progress-bar {
     padding: 0 2px;
-    margin-right: 26px;
+    margin-top: -15px;
+    margin-left: 645px;
   }
 
   .example__bony {

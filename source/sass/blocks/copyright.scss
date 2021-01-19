@@ -54,19 +54,27 @@
 
   .copyright__link {
     padding: 0;
-    margin-top: 57px;
-    margin-right: -16px;
+    margin-top: 60px;
+    margin-right: -17px;
   }
 
   .copyright__logo {
-    margin-top: 50px;
+    margin-top: 53px;
     margin-left: 39px;
-    margin-right: 1px;
+    margin-right: 2px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .copyright {
-    padding: 7px 39px;
+    padding: 6px 38px;
+  }
+
+  .copyright__logo {
+    margin-top: 50px;
+  }
+
+  .copyright__link {
+    margin-top: 57px;
   }
 }
