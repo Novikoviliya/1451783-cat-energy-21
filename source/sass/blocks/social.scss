@@ -55,12 +55,8 @@
 }
 
 .social__link {
-  &--position-fb {
+  &-fb {
     stroke: $color-stroke-fb;
-
-    &:hover {
-      stroke: $green;
-    }
   }
 
   &:hover {
@@ -76,22 +72,22 @@
 @media (min-width: $tablet-width) {
   .social__list {
     padding: 0;
-    margin-top: 48px;
+    margin-top: 52px;
     margin-left: 20px;
   }
 
   .social__link {
-    &--position-fb {
-      width: 28px;
-      height: 33px;
-    }
-
-    &--position {
+    &-instagram--icon {
       width: 23px;
       height: 23px;
     }
 
-    &--vk {
+    &-fb--icon {
+      width: 28px;
+      height: 33px;
+    }
+
+    &-vk--icon {
       width: 30px;
       height: 22px;
     }
@@ -121,9 +117,14 @@
 
 @media (min-width: $desktop-width) {
   .social__list {
-    min-width: 700px;
     padding: 0;
-    margin-top: 42px;
-    margin-left: 103px;
+    margin-top: 41px;
+    margin-left: 59px;
+  }
+
+  .social__item {
+    &:nth-child(2) {
+      margin-left: 19px;
+    }
   }
 }

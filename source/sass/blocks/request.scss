@@ -20,12 +20,21 @@
     flex-direction: row;
     padding-bottom: 8px;
 
-    &--line::before {
+    &-line::before {
       content: "";
       position: absolute;
       left: 0;
       top: 426px;
-      width: 320px;
+      width: 100%;
+      border-bottom: 1px solid $color-line;
+    }
+
+    &-line--bottom::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 585px;
+      width: 100%;
       border-bottom: 1px solid $color-line;
     }
   }
@@ -35,7 +44,7 @@
   margin: 0;
   padding: 0;
   margin-left: -1px;
-  padding-top: 52px;
+  padding-top: 53px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -49,15 +58,6 @@
     right: -19px;
     width: 99px;
     border-bottom: 2px solid $green;
-  }
-
-  &--bar::after {
-    content: "";
-    position: absolute;
-    right: -20px;
-    top: 24px;
-    width: 115%;
-    border-bottom: 1px solid $color-line;
   }
 
   &--stripe::before {
@@ -80,7 +80,7 @@
 
   &--size {
     padding-top: 22px;
-    padding-bottom: 39px;
+    padding-bottom: 41px;
   }
 }
 
@@ -114,7 +114,7 @@
 }
 
 .request__text {
-  padding-top: 8px;
+  padding-top: 6px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -124,11 +124,11 @@
   text-align: center;
 }
 
-.request__write--down {
+.request__write-down {
   display: block;
   padding-left: 47px;
   padding-right: 57px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
 
   &:last-child {
     padding-right: 97px;
@@ -160,7 +160,7 @@
     line-height: 36px;
 
     &--bar::before {
-      top: 99px;
+      top: 98px;
       left: -29px;
       width: 30px;
     }
@@ -168,22 +168,22 @@
     &--bar::after {
       content: "";
       position: absolute;
-      top: 99px;
+      top: 98px;
       right: -30px;
       width: 145px;
       border-bottom: 2px solid $green;
     }
 
     &--stripe::before {
-      top: 21px;
-      right: -30px;
+      top: 22px;
+      right: -29px;
       width: 478px;
     }
 
     &--stripe::after {
       content: "";
       position: absolute;
-      top: 21px;
+      top: 22px;
       left: -30px;
       width: 30px;
       border-bottom: 2px solid $green;
@@ -228,7 +228,7 @@
     border: 1px solid $color-border;
   }
 
-  .request__info--edit {
+  .request__info-edit {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -237,7 +237,7 @@
     height: 140px;
   }
 
-  .request__info--edit-control {
+  .request__info-edit--control {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -246,7 +246,7 @@
     height: 146px;
   }
 
-  .request__write--down {
+  .request__write-down {
     display: block;
     padding-left: 99px;
     padding-right: 59px;
@@ -261,7 +261,7 @@
     height: 52px;
     font-size: 20px;
     line-height: 0px;
-    margin-left: 43px;
+    margin-left: 40px;
     margin-top: 15px;
   }
 
@@ -344,17 +344,17 @@
     padding-top: 9px;
   }
 
-  .request__info--edit-control {
+  .request__info-edit--control {
     display: grid;
     grid-template-columns: repeat(4, 326px);
-    height: 80px;
+    margin-left: 1px;
   }
 
-  .request__write--down {
+  .request__write-down {
     padding: 0 98px;
 
     &:last-child {
-      padding-left: 96px;
+      padding-left: 99px;
     }
   }
 
@@ -365,12 +365,12 @@
     margin-left: 41px;
   }
 
-  .request__info--edit {
+  .request__info-edit {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     width: 100%;
-    height: 135px;
+    height: 80px;
   }
 
   .request__text {
@@ -381,5 +381,9 @@
   .request__position--email {
     margin-top: 27px;
     margin-bottom: 68px;
+  }
+
+  .request__info-position {
+    margin-bottom: 150px;
   }
 }

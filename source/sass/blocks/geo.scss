@@ -4,8 +4,12 @@
   justify-content: space-between;
   padding: 0 19px;
   background-color: white;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   padding-top: 30px;
+}
+
+.geo__position {
+  background-color: inherit;
 }
 
 .geo__title {
@@ -22,7 +26,7 @@
   text-transform: uppercase;
 }
 
-.geo__color--toggle {
+.geo__color {
   background-color: inherit;
 }
 
@@ -41,11 +45,12 @@
 
 @media (min-width: $tablet-width) {
   .geo {
+    width: 768px;
     height: 201px;
     margin-bottom: 0;
   }
 
-  .geo__color--toggle {
+  .geo__color {
     padding-top: 61px;
     background-color: inherit;
   }
@@ -59,6 +64,10 @@
     line-height: 25px;
   }
 
+  .geo__position {
+    padding-top: 61px;
+  }
+
   .geo__description {
     width: 159px;
     height: 80px;
@@ -68,7 +77,7 @@
     line-height: 20px;
     text-indent: 60px;
 
-    &--city {
+    &-city {
       display: inline-block;
       margin-top: 20px;
       text-indent: 28px;
@@ -79,17 +88,22 @@
 @media (min-width: $desktop-width) {
   .geo {
     position: absolute;
-    margin: 93px 110px;
+    margin-top: 94px;
+    margin-left: 110px;
+    margin-bottom: 107px;
     width: 570px;
-    height: 201px;
   }
 
   .geo__title {
-    padding-top: 3px;
     padding-left: 5px;
   }
 
-  .geo__color--toggle {
+  .geo__position {
+    padding-top: 64px;
+    background-color: $color-white;
+  }
+
+  .geo__color {
     background-color: $color-white;
   }
 
@@ -97,10 +111,9 @@
     width: 270px;
     height: 60px;
     padding-left: 90px;
-    padding-top: 3px;
     text-indent: 0;
 
-    &--city {
+    &-city {
       text-indent: 0;
     }
   }

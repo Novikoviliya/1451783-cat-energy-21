@@ -18,6 +18,7 @@
 .advantages__description {
   margin: 0;
   padding: 0;
+  width: 200px;
 }
 
 .advantages__item {
@@ -25,7 +26,7 @@
   padding-left: 80px;
   position: relative;
 
-  &-icon--sheet {
+  &-sheet {
     &::before {
       content: "";
       position: absolute;
@@ -38,7 +39,7 @@
     }
   }
 
-  &-icon--powder {
+  &-powder {
     &::before {
       content: "";
       position: absolute;
@@ -51,7 +52,7 @@
     }
   }
 
-  &-icon--knife {
+  &-knife {
     &::before {
       content: "";
       position: absolute;
@@ -64,7 +65,7 @@
     }
   }
 
-  &-icon--clock {
+  &-clock {
     &::before {
       content: "";
       position: absolute;
@@ -93,32 +94,22 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding: 0 30px;
+    padding: 0;
     margin-bottom: 145px;
+    width: 710px;
   }
 
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 157px;
+    padding-bottom: 156px;
   }
 
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 58px;
-    row-gap: 245px;
-
-    @media (max-width: 1439px) {
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: -102px;
-        right: 0;
-        width: 768px;
-        border-bottom: 1px solid $color-line-gray;
-      }
-    }
+    row-gap: 244px;
   }
 
   .advantages__item {
@@ -126,9 +117,9 @@
     line-height: 24px;
     margin: 0;
     padding: 0;
-    padding-right: 80px;
+    padding-right: 0;
 
-    &-icon--sheet {
+    &-sheet {
       &::before {
         top: -112px;
         width: 80px;
@@ -149,7 +140,7 @@
       }
     }
 
-    &-icon--powder {
+    &-powder {
       &::before {
         top: -112px;
         width: 80px;
@@ -170,7 +161,7 @@
       }
     }
 
-    &-icon--knife {
+    &-knife {
       &::before {
         top: -112px;
         width: 80px;
@@ -191,7 +182,7 @@
       }
     }
 
-    &-icon--clock {
+    &-clock {
       &::before {
         top: -112px;
         width: 80px;
@@ -216,12 +207,17 @@
   .advantages__description--shadow {
     display: block;
   }
+
+  .advantages__description {
+    width: 245px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding: 0 110px;
+    padding: 0;
     margin-bottom: 70px;
+    width: 1220px;
   }
 
   .advantages__list {
@@ -233,5 +229,9 @@
 
   .advantages__item {
     padding: 0;
+  }
+
+  .advantages__title {
+    padding-top: 2px;
   }
 }

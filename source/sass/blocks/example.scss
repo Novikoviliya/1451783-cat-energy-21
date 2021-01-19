@@ -1,40 +1,72 @@
 .example {
   background-color: $bg-gray;
+  width: 100%;
+}
+
+.example__position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.example__inner {
+  width: 280px;
+}
+
+.example__cat-fat-wrapper-art {
+  margin-top: 20px;
+  margin-left: -4px;
+}
+
+.example__cat-fat-wrapper {
+  width: 311px;
 }
 
 .example__title {
   margin: 0;
-  padding: 26px 20px;
+  padding: 26px 0;
+  padding-right: 85px;
   padding-bottom: 35px;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
   color: $color-black;
+  text-align: center;
 }
 
 .example__description {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   padding-bottom: 26px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
+  width: 280px;
 }
 
 .example__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
   padding-bottom: 21px;
   list-style: none;
   text-align: center;
+
+  &:first-child {
+    margin-right: 20px;
+  }
 }
 
 .example__item {
+  &--position {
+    margin-right: 33px;
+  }
   padding: 15px 20px;
+  margin: 0;
   width: 124px;
   height: 56px;
   border: 1px solid $color-additional;
@@ -85,11 +117,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-}
-
-.example__cat-fat-wrapper-art {
-  padding-top: 18px;
-  padding-right: 5px;
+  margin-bottom: 1px;
 }
 
 .example__cat-slim-wrapper-art {
@@ -158,22 +186,28 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-color: $color-white;
+    background: linear-gradient(to bottom, $color-white 55.5%, $bg-gray 50%);
+  }
+
+  .example__inner {
+    width: 768px;
   }
 
   .example__title {
-    padding: 0 30px;
+    padding: 2px 0;
+    margin-left: -383px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .example__description {
     padding: 0;
-    padding-top: 64px;
+    padding-top: 62px;
     padding-bottom: 54px;
     padding-right: 20px;
     font-size: 16px;
     line-height: 24px;
+    width: 708px;
   }
 
   .example__value {
@@ -219,7 +253,7 @@
     font-size: 20px;
     line-height: 20px;
 
-    &--down {
+    &-down {
       padding-top: 9px;
       padding-left: 84px;
     }
@@ -241,20 +275,31 @@
   }
 
   .example__cat-wrapper {
-    margin-top: 235px;
+    margin-top: 174px;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
-    height: 462px;
-    background-color: $bg-gray;
+
+    @media (max-width: 1439px) {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -562px;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px solid $color-line-gray;
+      }
+    }
   }
 
   .example__progress-bar {
     padding: 0;
     width: 570px;
-    margin-top: -59px;
+    margin-top: 25px;
+    margin-bottom: 48px;
   }
 
   .example__fat {
@@ -347,9 +392,13 @@
   }
 
   .example__cat-fat-wrapper-art {
-    margin-top: -221px;
+    margin-top: -114px;
     padding-right: 0;
-    padding-left: 2px;
+    padding-left: 50px;
+  }
+
+  .example__cat-fat-wrapper {
+    width: 768px;
   }
 
   .example__cat-slim-wrapper-art {
@@ -362,21 +411,24 @@
 @media (min-width: $desktop-width) {
   .example {
     padding: 0;
+    width: 100%;
   }
 
   .example__inner {
+    width: 1280px;
     height: 462px;
   }
 
   .example__title {
-    padding-left: 110px;
-    padding-top: 56px;
+    margin: 0;
+    margin-right: 895px;
+    padding-top: 55px;
     padding-bottom: 76px;
   }
 
   .example__description {
-    padding: 69px 80px;
-    padding-right: 184px;
+    padding: 69px 0;
+    width: 436px;
   }
 
   .example__slim {
@@ -387,16 +439,15 @@
   }
 
   .example__cat-wrapper {
-    align-items: center;
-    justify-content: space-between;
+    margin-left: auto;
     padding-bottom: 0;
-    height: 0;
+    margin-top: -102px;
   }
 
   .example__cat-fat-wrapper-art {
     position: absolute;
-    top: -226px;
-    left: -80px;
+    bottom: 112px;
+    left: 554px;
   }
 
   .example__position {
@@ -409,7 +460,6 @@
 
   .example__item {
     padding-top: 14px;
-    margin-left: 80px;
     margin-right: 2px;
   }
 
@@ -423,17 +473,17 @@
 
   .example__spent {
     flex-direction: row;
-    padding: 39px 80px;
+    padding: 39px 0;
 
-    &--down {
+    &-down {
       padding: 0 63px;
     }
   }
 
   .example__progress-bar {
     padding: 0 2px;
-    margin-right: 112px;
-    margin-top: 133px;
+    margin-top: -15px;
+    margin-left: 645px;
   }
 
   .example__bony {

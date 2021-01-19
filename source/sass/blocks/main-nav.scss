@@ -1,6 +1,14 @@
 .main-nav {
   position: relative;
-  width: auto;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 657px;
+  }
 }
 
 .main-nav__list {
@@ -13,12 +21,12 @@
 .main-nav__toggle {
   position: absolute;
   top: -41px;
-  right: 19px;
+  right: 20px;
   z-index: 1;
   display: block;
   width: 24px;
   height: 16px;
-  background-color: $color-white;
+  background-color: transparent;
   cursor: pointer;
   border: none;
 
@@ -28,11 +36,11 @@
 }
 
 @media (max-width: 767px) {
-  .main-nav__menu--opened {
+  .main-nav--opened {
     &::before {
       content: "";
       position: absolute;
-      top: -41px;
+      top: -42px;
       right: 20px;
       width: 24px;
       height: 1.5px;
@@ -43,7 +51,7 @@
   }
 }
 
-.main-nav__menu--closed {
+.main-nav--closed {
   &::before {
     content: "";
     position: absolute;
