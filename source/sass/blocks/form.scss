@@ -1,8 +1,3 @@
-.form {
-  display: flex;
-  flex-direction: column;
-}
-
 .form__field {
   padding-bottom: 15px;
 
@@ -27,8 +22,9 @@
   width: 219px;
   height: 45px;
   margin-top: 10px;
-  margin-left: 8px;
+  margin-left: 7px;
   padding-left: 15px;
+  padding-top: 3px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -38,20 +34,28 @@
   border: 1px solid $color-additional;
   position: relative;
   outline: none;
-
-  &--icon {
-    position: absolute;
-    right: 15px;
-    bottom: 98px;
-    stroke: $color-stroke;
-
-    &:hover {
-      stroke: $color-stroke;
-    }
-  }
 }
 
 .form__control {
+  &-color {
+    &--icon {
+      position: absolute;
+      right: 36px;
+      bottom: 75px;
+      stroke: $color-stroke;
+
+      &:hover {
+        stroke: $color-stroke;
+      }
+    }
+
+    &--phone {
+      position: absolute;
+      right: 33px;
+      bottom: 13px;
+    }
+  }
+
   &:focus {
     border: 2px solid $color-active;
   }
@@ -75,13 +79,51 @@
   }
 }
 
+.form__position {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &--line::before {
+    content: "";
+    position: absolute;
+    top: 68px;
+    right: 0;
+    width: 31%;
+    border-bottom: 2px solid $green;
+  }
+
+  &--bar::before {
+    content: "";
+    position: absolute;
+    top: 36px;
+    right: 0;
+    width: 49%;
+    border-bottom: 2px solid $green;
+  }
+
+  &--stripe::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 0;
+    width: 42%;
+    border-bottom: 2px solid $green;
+  }
+}
+
 .form__control-number {
   width: 204px;
   height: 45px;
   margin-top: 5px;
-  padding-left: 15px;
+  padding-left: 16px;
   margin-left: 7px;
-  margin-bottom: 21px;
+  padding-top: 4px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -90,12 +132,6 @@
   color: $color-dark-gray;
   border: 1px solid $color-additional;
   outline: none;
-
-  &--phone {
-    position: absolute;
-    right: 13px;
-    bottom: 35px;
-  }
 }
 
 .form__control-name {
@@ -237,6 +273,10 @@
     padding-bottom: 20px;
   }
 
+  .form__position {
+    width: 768px;
+  }
+
   .form__text {
     font-size: 20px;
     line-height: 30px;
@@ -301,12 +341,7 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 20px;
-    margin-left: 12px;
-
-    &--phone {
-      bottom: 80px;
-      right: 53px;
-    }
+    margin-left: 13px;
   }
 
   .form__control-email {
@@ -315,13 +350,9 @@
     font-size: 20px;
     line-height: 30px;
     margin-top: 7px;
-    margin-left: 14px;
-    padding-left: 22px;
-
-    &--icon {
-      bottom: 155px;
-      right: 53px;
-    }
+    margin-left: 17px;
+    padding-top: 1px;
+    padding-left: 21px;
   }
 
   .form__type-additionally {
@@ -346,6 +377,69 @@
       transform: rotate(45deg);
     }
   }
+
+  .form {
+    position: relative;
+
+    &--line::before {
+      top: 98px;
+      right: 0;
+      width: 19%;
+    }
+
+    &--line::after {
+      content: "";
+      position: absolute;
+      top: 98px;
+      left: 0;
+      width: 4%;
+      border-bottom: 2px solid $green;
+    }
+
+    &--bar::before {
+      top: 86px;
+      right: 0;
+      width: 62%;
+    }
+
+    &--bar::after {
+      content: "";
+      position: absolute;
+      top: 86px;
+      left: 0;
+      width: 4%;
+      border-bottom: 2px solid $green;
+    }
+
+    &--stripe::before {
+      top: 86px;
+      right: 0;
+      width: 58%;
+    }
+
+    &--stripe::after {
+      content: "";
+      position: absolute;
+      top: 86px;
+      left: 0;
+      width: 4%;
+      border-bottom: 2px solid $green;
+    }
+  }
+
+  .form__control {
+    &-color {
+      &--icon {
+        right: 85px;
+        bottom: 90px;
+      }
+
+      &--phone {
+        right: 83px;
+        bottom: 14px;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -365,6 +459,16 @@
     }
   }
 
+  .form__position {
+    width: 1220px;
+  }
+
+  .form__field-position {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
   .form__control-weight {
     width: 475px;
     height: 52px;
@@ -379,18 +483,52 @@
     margin-left: 14px;
   }
 
+  .form {
+    position: relative;
+
+    &--line::before {
+      top: 72px;
+      right: 0;
+      width: 54%;
+    }
+
+    &--line::after {
+      top: 72px;
+      left: 0;
+      width: 5%;
+    }
+
+    &--bar::before {
+      top: 22px;
+      right: 0;
+      width: 77%;
+    }
+
+    &--bar::after {
+      top: 22px;
+      left: 0;
+      width: 5%;
+    }
+
+    &--stripe::before {
+      top: 88px;
+      right: 0;
+      width: 75%;
+    }
+
+    &--stripe::after {
+      top: 87px;
+      left: 0;
+      width: 5%;
+    }
+  }
+
   .form__control-email {
     width: 486px;
     height: 52px;
     margin-top: 9px;
-    margin-left: 18px;
+    margin-left: 17px;
     padding-left: 18px;
-
-    &--icon {
-      bottom: 87px;
-      right: 0;
-      left: 571px;
-    }
   }
 
   .form__control-number {
@@ -398,10 +536,20 @@
     height: 52px;
     margin-left: 14px;
     padding-left: 17px;
+    padding-top: 0;
+  }
 
-    &--phone {
-      right: 57px;
-      bottom: 84px;
+  .form__control {
+    &-color {
+      &--icon {
+        right: 779px;
+        bottom: 85px;
+      }
+
+      &--phone {
+        right: 127px;
+        bottom: 82px;
+      }
     }
   }
 

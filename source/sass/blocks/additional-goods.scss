@@ -4,6 +4,11 @@
   list-style: none;
 }
 
+.additional-goods__intro {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .additional-goods__position {
   margin: 0 auto;
   padding: 0 20px;
@@ -21,6 +26,10 @@
 @media (min-width: $tablet-width) {
   .additional-goods__list {
     border: 1px solid $color-additional;
+  }
+
+  .additional-goods__intro {
+    width: 708px;
   }
 
   .additional-goods__position {
@@ -61,6 +70,7 @@
   .additional-goods__intro {
     display: flex;
     justify-content: space-between;
+    width: 1220px;
   }
 
   .additional-goods__position {

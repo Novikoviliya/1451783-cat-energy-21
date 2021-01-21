@@ -3,19 +3,21 @@
   padding: 0;
   padding-top: 25px;
   padding-bottom: 33px;
+  margin-right: 54px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   color: $color-black;
+  text-align: center;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
     top: 39px;
-    right: -20px;
-    width: 53px;
+    right: -74px;
+    width: 23%;
     border-bottom: 2px solid $green;
   }
 }
@@ -25,13 +27,13 @@
     font-size: 36px;
     line-height: 36px;
     padding-top: 69px;
-    padding-left: 37px;
+    margin-right: 296px;
     padding-bottom: 80px;
 
     &::before {
-      width: 328px;
+      width: 80%;
       top: 91px;
-      right: -30px;
+      right: -326px;
     }
 
     &::after {
@@ -39,7 +41,7 @@
       position: absolute;
       left: -30px;
       top: 92px;
-      width: 30px;
+      width: 7%;
       border-bottom: 2px solid $green;
     }
   }
@@ -49,18 +51,18 @@
   .item-title__position {
     padding-top: 29px;
     padding-bottom: 82px;
-    padding-left: 0;
+    margin-left: -587px;
 
     &::after {
       top: 53px;
-      left: -109px;
-      width: 70px;
+      left: 473px;
+      width: 5%;
     }
 
     &::before {
       top: 53px;
-      right: -110px;
-      width: 957px;
+      right: -405px;
+      width: 63%;
     }
   }
 }

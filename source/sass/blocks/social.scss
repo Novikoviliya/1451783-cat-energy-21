@@ -55,8 +55,14 @@
 }
 
 .social__link {
+  text-decoration: none;
+
   &-fb {
     stroke: $color-stroke-fb;
+
+    &:hover {
+      stroke: $green;
+    }
   }
 
   &:hover {
@@ -88,7 +94,7 @@
     }
 
     &-vk--icon {
-      width: 30px;
+      width: 28px;
       height: 22px;
     }
   }
@@ -119,7 +125,7 @@
   .social__list {
     padding: 0;
     margin-top: 41px;
-    margin-left: 59px;
+    margin-left: 57px;
   }
 
   .social__item {
