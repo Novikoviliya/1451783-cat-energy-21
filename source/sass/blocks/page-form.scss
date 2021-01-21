@@ -41,15 +41,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 320px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-form__wrapper {
-    padding: 0 30px;
-    width: 768px;
-  }
-
   .page-form__title {
     padding-top: 34px;
     padding-bottom: 55px;
@@ -67,11 +61,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-form__wrapper {
-    padding: 16px 70px;
-    width: 1440px;
-  }
-
   .page-form__description {
     padding-top: 2px;
     margin-right: 590px;
@@ -79,6 +68,6 @@
 
   .page-form__title {
     margin-right: 590px;
-    padding-top: 2px;
+    padding-top: 18px;
   }
 }

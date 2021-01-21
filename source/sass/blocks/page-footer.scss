@@ -54,7 +54,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-top: 3px;
+    padding-top: 1px;
     height: 149px;
   }
 
@@ -63,7 +63,7 @@
   }
 
   .page-footer__logo-icon {
-    padding-left: 40px;
+    margin-left: 20px;
 
     &--position {
       margin-top: 46px;
