@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  width: 320px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 500px;
@@ -16,63 +16,4 @@
   margin: 0;
   list-style: none;
   text-align: center;
-}
-
-.main-nav__toggle {
-  position: absolute;
-  top: -41px;
-  right: 20px;
-  z-index: 1;
-  display: block;
-  width: 24px;
-  height: 16px;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .main-nav--opened {
-    &::before {
-      content: "";
-      position: absolute;
-      top: -42px;
-      right: 20px;
-      width: 24px;
-      height: 1.5px;
-      z-index: 2;
-      background-color: $color-black;
-      box-shadow: 0 8px 0 0 $color-black, 0 16px 0 0 $color-black;
-    }
-  }
-}
-
-.main-nav--closed {
-  &::before {
-    content: "";
-    position: absolute;
-    top: -35px;
-    right: 20px;
-    width: 24px;
-    height: 1.5px;
-    z-index: 2;
-    background-color: $color-black;
-    transform: rotate(135deg);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -35px;
-    right: 20px;
-    width: 24px;
-    height: 1.5px;
-    z-index: 2;
-    background-color: $color-black;
-    transform: rotate(45deg);
-  }
 }

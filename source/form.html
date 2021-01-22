@@ -31,13 +31,12 @@
             </defs>
           </symbol>
           <use xlink:href="#page-header__logo-title--icon">
-
           </use>
         </svg>
       </a>
+      <button class="page-header__wrapper-toggle page-header__wrapper-toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
-    <nav class="main-nav main-nav--opened">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a class="site-list__link site-list__link--color" href="index.html">главная</a>
         </li>
@@ -49,7 +48,7 @@
     </nav>
   </header>
   <main class="page-form">
-    <section class="page-form__wrapper container">
+    <section class="page-form__wrapper">
       <h1 class="page-form__title">Подбор программы</h1>
       <p class="page-form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       <form class="request" action="https://echo.htmlacademy.ru" method="post">
@@ -83,57 +82,59 @@
             </fieldset>
           </div>
         </div>
-        <fieldset class="request__field form">
-          <h3 class="request__title-line request__title-line--bar">Контактные данные (владельца кота)</h3>
-          <div class="request__info form__field-position">
-            <div class="request__position request__position--email">
-              <label class="form__field" for="email">
+        <fieldset class="request__field form form--line">
+          <div class="form__position">
+
+            <div class="request__info form__field-position">
+              <h3 class="request__title-line request__title-line--bar">Контактные данные (владельца кота)</h3>
+              <div class="request__position request__position--email">
+                <label class="form__field" for="email">
                 <span class="form__text">E-mail:*</span>
                 <input class="form__control form__control-email form__control-email--color" type="email" id="email"
                   name="email" placeholder="kuklachev@gmail.com" required>
-                <svg class="form__control--color form__control-email--icon" width="20" height="15">
-                  <symbol id="sprite-email" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15">
-                    <path stroke-width="1.3"
-                      d="M1.65 5.85v8M18.65 5.85v8M1 13.2h18M1 1.2h18M18.35 3.03L10 9.53l-8.35-6.5V1.5h16.7v1.53z" />
-                  </symbol>
-                  <use xlink:href="#sprite-email">
-                  </use>
-                </svg>
+                  <svg class="form__control form__control-color form__control-color--icon" width="20" height="15">
+                    <symbol id="sprite-email" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15">
+                      <path stroke-width="1.3"
+                        d="M1.65 5.85v8M18.65 5.85v8M1 13.2h18M1 1.2h18M18.35 3.03L10 9.53l-8.35-6.5V1.5h16.7v1.53z" />
+                    </symbol>
+                    <use xlink:href="#sprite-email">
+                    </use>
+                  </svg>
               </label>
-            </div>
-            <div class="request__position-phone">
-              <label class="form__field form__field--position" for="phone">
+              </div>
+              <div class="request__position-phone">
+                <label class="form__field form__field--position" for="phone">
                 <span class="form__text">Телефон:*</span>
                 <input class="form__control form__control-number" type="tel" id="phone" name="phone"
                   placeholder="8 (960) 900-60-90" required>
-                <svg class="form__control--color form__control-number--phone" width="20" height="21">
-                  <symbol id="phone-sprite" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21">
-                    <g fill="#000" clip-path="url(#clip2)">
-                      <path
-                        d="M17.9 9.75H9.4v1.2h8.5l-2.1 2.11.9.9 3.1-3.1a.75.75 0 000-.9l-3.1-3.12-.9.9 2.1 2.01zM8.1 19.79v-6.22a.65.65 0 00-.6-.6H3.1a1.23 1.23 0 001.2 1.2h2.5v5.02H3.1a1.78 1.78 0 01-1.9-1.71V3.43a1.78 1.78 0 011.7-1.8h3.9v5.01H4.4a1.22 1.22 0 00-1.2 1.2h4.4a.65.65 0 00.6-.6V.92a.86.86 0 00-.7-.6H3.1A3 3 0 000 3.23v13.95a2.9 2.9 0 002.9 3.1h4.6a.5.5 0 00.6-.5z" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip2">
-                        <path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.07H0z" />
-                      </clipPath>
-                    </defs>
-                  </symbol>
-                  <use xlink:href="#phone-sprite">
-
-                  </use>
-                </svg>
+                  <svg class="form__control form__control-color form__control-color--phone" width="20" height="21">
+                    <symbol id="phone-sprite" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21">
+                      <g fill="#000" clip-path="url(#clip2)">
+                        <path
+                          d="M17.9 9.75H9.4v1.2h8.5l-2.1 2.11.9.9 3.1-3.1a.75.75 0 000-.9l-3.1-3.12-.9.9 2.1 2.01zM8.1 19.79v-6.22a.65.65 0 00-.6-.6H3.1a1.23 1.23 0 001.2 1.2h2.5v5.02H3.1a1.78 1.78 0 01-1.9-1.71V3.43a1.78 1.78 0 011.7-1.8h3.9v5.01H4.4a1.22 1.22 0 00-1.2 1.2h4.4a.65.65 0 00.6-.6V.92a.86.86 0 00-.7-.6H3.1A3 3 0 000 3.23v13.95a2.9 2.9 0 002.9 3.1h4.6a.5.5 0 00.6-.5z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip2">
+                          <path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.07H0z" />
+                        </clipPath>
+                      </defs>
+                    </symbol>
+                    <use xlink:href="#phone-sprite">
+                    </use>
+                  </svg>
               </label>
+              </div>
             </div>
           </div>
         </fieldset>
-        <div class="request__field">
+        <div class="request__field request__field-position form form--bar">
           <label class="request__title-line request__title-line--stripe" for="writecomment">Комментарий
           </label>
           <textarea class="request__textarea" rows="10" name="writecomment" id="writecomment" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </div>
 
-        <fieldset class="request__field form">
-          <h3 class="request__title-line request__title-line--size  request__title-line--stria">Дополнительно</h3>
+        <fieldset class="request__field form request__field-position form--stripe">
+          <h3 class="request__title-line request__title-line--size">Дополнительно</h3>
           <div class="request__info-edit request__info-edit--control">
             <div class="request__write request__write-down">
               <input class="visually-hidden form__type-additionally  form__type-additionally--checkbox" type="checkbox" name="sugar" id="sugar" checked>
@@ -155,7 +156,7 @@
           </div>
         </fieldset>
 
-        <div class="request__info-edit">
+        <div class="request__info request__info-bid">
           <div class="request__info-position">
             <button class="button request__button">отправить заявку</button>
           </div>
@@ -167,12 +168,13 @@
     </section>
     <div class="map map--color">
       <div class="map__wrapper">
-      <section class="geo geo__position">
-        <h2 class="geo__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
-        <p class="geo__description">ул. Большая Конюшенная, д. 19/8 <span class="geo__description-city">Санкт-Петербург</span></p>
-      </section>
+        <section class="geo geo__position">
+          <h2 class="geo__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+          <p class="geo__description">ул. Большая Конюшенная, д. 19/8 <span class="geo__description-city">Санкт-Петербург</span></p>
+        </section>
       </div>
-      <iframe class="map__iframe-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1611017189146!5m2!1sru!2skz" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe class="map__iframe-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1611017189146!5m2!1sru!2skz"
+        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
   </main>
   <footer class="page-footer">
@@ -180,7 +182,7 @@
       <div class="page-footer__position">
         <div class="page-footer__logo">
           <a class="page-footer__logo-icon" href="index.html">
-            <svg class="page-footer__logo-icon--position" width="128" height="24">
+            <svg class="page-footer__logo-icon page-footer__logo-icon--position" width="128" height="24">
               <symbol id="page-footer__logo-icon--title" fill="none" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 128 24">
                 <g clip-path="url(#clip1)" fill="#111">
@@ -202,11 +204,10 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link-vk" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
-                <svg class="social__link-vk--icon" width="23" height="16">
-                  <symbol id="social__link--icon" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 16">
-                    <path
-                      d="M.07 4c0-.63.42-.96 1.27-1.01L4.6 3c.22 0 .37.09.44.27.33.91.7 1.7 1.13 2.37.41.66.95 1.43 1.63 2.3a.3.3 0 00.28.16c.1 0 .18-.04.24-.13l.07-.2.02-3.17c0-.21-.06-.36-.19-.43A1.9 1.9 0 007.53 4c-.26-.04-.4-.17-.4-.4 0-.05.02-.09.03-.11.3-.8 1.18-1.19 2.63-1.19L11 2.29c.56 0 1.02.12 1.38.35.37.23.55.6.55 1.1v4.15c.1.06.2.09.28.09.22 0 .41-.11.57-.33 1.6-1.88 2.48-3.13 2.6-3.77a1.29 1.29 0 01.55-.57c.24-.13.44-.22.62-.27a.5.5 0 01.2-.03h3.39l.21.01c.3 0 .52.12.68.35.06.07.1.15.12.24a1.57 1.57 0 01.06.4v.13c-.1.5-.36 1.03-.78 1.6-.41.57-.94 1.18-1.59 1.84-.64.66-1.04 1.09-1.2 1.3-.13.14-.2.28-.2.4 0 .1.06.2.18.33l3.2 3.36c.17.2.26.41.26.64 0 .28-.13.52-.4.7-.26.18-.57.28-.94.3l-.37.03h-3.33a.8.8 0 00-.08 0 .8.8 0 01-.1.02c-.31 0-.61-.12-.89-.35a182 182 0 01-2.06-2.16 1.1 1.1 0 00-.3-.24 25.63 25.63 0 00-.44 1.63l-.07.31c-.14.43-.45.68-.92.77l-.3.02H9.74a5.92 5.92 0 01-3.62-1.4 14.5 14.5 0 01-3.25-3.59A32.9 32.9 0 01.18 4.52C.11 4.36.07 4.2.07 4zm13.15 4.73c-.3 0-.58-.07-.83-.21-.25-.14-.37-.33-.37-.58v-4.2c0-.25-.07-.42-.22-.52-.15-.1-.4-.16-.77-.16L9.8 3.1c-.63 0-1.1.09-1.43.27.65.26.97.67.97 1.24v3.22c-.03.3-.18.56-.44.76-.26.2-.55.3-.88.3-.43 0-.77-.17-1-.53a18.47 18.47 0 01-2.54-4.1l-.2-.47-2.9-.02c-.2 0-.3.01-.33.03-.02.02-.03.07-.03.16 0 .1.02.22.04.34l.46 1.03a23.46 23.46 0 004 6.25c1.44 1.53 2.85 2.29 4.23 2.29h2.2c.08 0 .15-.02.19-.07a.52.52 0 00.1-.24l.05-.18.42-1.61c.11-.22.22-.37.3-.44.16-.14.35-.2.57-.2.35 0 .71.17 1.08.53l1.86 1.97c.11.16.24.24.37.24h3.6c.45 0 .67-.1.67-.28a.31.31 0 00-.07-.18l-3.17-3.3a1.17 1.17 0 01-.38-.83c0-.3.12-.57.35-.84.2-.25.56-.65 1.11-1.22a28.2 28.2 0 001.43-1.59c.41-.5.68-.94.81-1.34l.07-.24a.24.24 0 01-.02-.12l-.02-.14h-3.44c-.22.07-.4.18-.53.33l-.13.35c-.36.84-1.32 2.14-2.86 3.9-.31.24-.67.36-1.08.36z"
-                      fill="#666" />
+                <svg class="social__link-vk social__link-vk--icon" width="28" height="22">
+                  <symbol id="social__link--icon" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 28 22">
+                    <path fill="#666666" d="M.085 5.49c0-.855.515-1.316 1.546-1.383l3.97.025a.52.52 0 01.532.377C6.542 5.767 7 6.852 7.505 7.766c.507.913 1.168 1.966 1.985 3.156.071.15.187.226.347.226.124 0 .222-.059.293-.176l.08-.277.026-4.35c0-.302-.075-.503-.226-.604-.151-.1-.43-.176-.84-.226-.319-.05-.479-.235-.479-.553 0-.067.009-.118.027-.151.373-1.09 1.438-1.635 3.197-1.635l1.492-.025c.675 0 1.234.16 1.678.478.444.318.667.821.667 1.509v5.708a.63.63 0 00.346.126c.266 0 .497-.15.693-.452 1.953-2.582 3.01-4.31 3.17-5.181 0-.017.018-.059.054-.126.124-.251.328-.47.612-.654.285-.184.533-.31.746-.377a.555.555 0 01.24-.05h4.13l.266.025c.355 0 .63.16.826.478.071.1.12.21.147.327.026.117.044.234.053.352.009.117.013.184.013.201v.176c-.124.687-.44 1.42-.945 2.2-.507.78-1.15 1.623-1.932 2.528s-1.27 1.5-1.466 1.785c-.16.202-.24.386-.24.554 0 .134.072.285.214.452l3.89 4.627c.213.269.32.562.32.88 0 .386-.16.705-.48.956-.32.252-.702.394-1.146.428l-.453.025h-4.05a.875.875 0 00-.106.012.862.862 0 01-.107.013c-.39 0-.755-.16-1.092-.478-.124-.134-.96-1.123-2.504-2.967a1.384 1.384 0 00-.373-.327c-.072.268-.165.654-.28 1.157-.116.503-.2.863-.253 1.081l-.08.428c-.178.586-.55.938-1.12 1.056l-.372.025h-2.611c-1.475 0-2.944-.637-4.41-1.911-1.465-1.274-2.784-2.922-3.956-4.942C2.323 11.253 1.23 8.902.219 6.22a1.916 1.916 0 01-.134-.73zm16.013 6.513c-.373 0-.71-.096-1.012-.289-.303-.193-.454-.457-.454-.792V5.138c0-.335-.088-.574-.266-.717-.178-.142-.488-.214-.932-.214l-1.52.05c-.763 0-1.34.126-1.73.378.78.352 1.171.922 1.171 1.71v4.426a1.5 1.5 0 01-.532 1.044 1.59 1.59 0 01-1.066.415c-.533 0-.942-.244-1.226-.73-1.385-1.978-2.415-3.856-3.09-5.633l-.24-.654-3.544-.025c-.23 0-.36.013-.386.038-.027.025-.04.096-.04.214 0 .15.018.31.053.477l.56 1.409c1.492 3.638 3.113 6.505 4.862 8.6 1.75 2.096 3.468 3.144 5.156 3.144h2.664c.107 0 .187-.03.24-.088.053-.059.097-.172.133-.34l.053-.251.507-2.213c.142-.302.266-.503.373-.604a.976.976 0 01.692-.276c.427 0 .862.243 1.306.729l2.264 2.716c.142.218.293.327.453.327h4.396c.533 0 .8-.126.8-.378a.465.465 0 00-.08-.25L21.8 13.888c-.302-.352-.453-.729-.453-1.131 0-.403.142-.788.426-1.157.23-.336.68-.893 1.345-1.673a37.63 37.63 0 001.745-2.187c.498-.68.826-1.295.986-1.849l.08-.327a.37.37 0 01-.026-.163.574.574 0 00-.027-.189h-4.183c-.266.1-.48.252-.64.453l-.16.478c-.443 1.157-1.607 2.942-3.49 5.356a1.892 1.892 0 01-1.305.503z"/>
+
                   </symbol>
                   <use xlink:href="#social__link--icon">
 
@@ -216,14 +217,11 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link-instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
-                <svg class="social__link-instagram--icon" width="16" height="16">
-                  <symbol id="social__link--sprite" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                    <path
-                      d="M7.98.06c1.34 0 2.43.02 3.27.05a6 6 0 011.92.37 3.99 3.99 0 012.31 2.32 6 6 0 01.38 1.92 91.88 91.88 0 010 6.53 6 6 0 01-.38 1.92 3.99 3.99 0 01-2.3 2.31 6 6 0 01-1.93.38 91.88 91.88 0 01-6.53 0 6 6 0 01-1.92-.38 3.99 3.99 0 01-2.32-2.3 6 6 0 01-.37-1.93 91.73 91.73 0 010-6.53A6 6 0 01.48 2.8 3.99 3.99 0 012.8.48 6 6 0 014.72.11C5.56.08 6.65.06 7.98.06zm0 1.03c-1.38 0-2.51.02-3.39.05-.56.02-1.08.12-1.56.3-.75.31-1.28.84-1.6 1.6-.17.47-.27 1-.29 1.55a98.83 98.83 0 000 6.79c.02.56.12 1.08.3 1.56.31.75.84 1.28 1.6 1.6.47.17 1 .27 1.55.29a98.66 98.66 0 006.79 0 5.01 5.01 0 001.56-.3 2.85 2.85 0 001.6-1.6c.17-.47.27-1 .29-1.55a98.66 98.66 0 000-6.79 5.01 5.01 0 00-.3-1.56 2.85 2.85 0 00-1.6-1.6c-.47-.17-1-.27-1.55-.29-.88-.03-2.01-.05-3.4-.05zm0 10.07c.88 0 1.63-.31 2.25-.93.62-.62.93-1.37.93-2.25 0-.87-.31-1.62-.93-2.24a3.06 3.06 0 00-2.25-.93c-.87 0-1.62.31-2.24.93a3.06 3.06 0 00-.93 2.24c0 .88.31 1.63.93 2.25.62.62 1.37.93 2.24.93zm0-7.24c1.13 0 2.09.4 2.88 1.19.8.8 1.19 1.75 1.19 2.87 0 1.13-.4 2.09-1.2 2.88-.78.8-1.74 1.19-2.87 1.19-1.12 0-2.08-.4-2.87-1.2a3.92 3.92 0 01-1.19-2.87c0-1.12.4-2.08 1.19-2.87.8-.8 1.75-1.19 2.87-1.19zm5.2-.15a.95.95 0 01-.97.94.9.9 0 01-.67-.28.9.9 0 01-.27-.66.95.95 0 01.93-.97c.26 0 .49.1.68.29.2.19.3.42.3.68z"
-                      fill="#666" />
+                <svg class="social__link-instagram social__link-instagram--icon" width="20" height="20">
+                  <symbol id="social__link--sprite" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 20 20">
+                    <path fill="#666666" d="M9.98.078c1.667 0 3.028.02 4.082.059.899.039 1.7.195 2.403.468.677.26 1.263.638 1.758 1.133.494.495.872 1.081 1.133 1.758.273.703.43 1.504.468 2.402.04 1.055.059 2.416.059 4.082 0 1.667-.02 3.028-.059 4.082-.039.899-.195 1.7-.469 2.403a4.985 4.985 0 01-1.132 1.758 4.985 4.985 0 01-1.758 1.133c-.703.273-1.504.43-2.402.468-1.055.04-2.416.059-4.083.059-1.666 0-3.027-.02-4.082-.059-.898-.039-1.699-.195-2.402-.469a4.985 4.985 0 01-1.758-1.132 4.984 4.984 0 01-1.133-1.758c-.273-.703-.43-1.504-.468-2.402-.04-1.055-.059-2.416-.059-4.083 0-1.666.02-3.027.059-4.082C.176 5 .332 4.2.605 3.496a4.984 4.984 0 011.133-1.758A4.984 4.984 0 013.496.605C4.2.332 5 .175 5.898.137 6.953.097 8.314.078 9.98.078zm0 1.29c-1.731 0-3.144.019-4.238.058a6.27 6.27 0 00-1.953.37A3.566 3.566 0 001.797 3.79a6.27 6.27 0 00-.371 1.953 123.51 123.51 0 00-.059 4.238c0 1.732.02 3.145.059 4.239a6.27 6.27 0 00.37 1.953 3.566 3.566 0 001.993 1.992c.599.221 1.25.345 1.953.371a123.7 123.7 0 004.238.059c1.732 0 3.145-.02 4.239-.059a6.274 6.274 0 001.953-.37 3.567 3.567 0 001.992-1.993c.221-.6.345-1.25.371-1.953.04-1.094.059-2.507.059-4.239 0-1.731-.02-3.144-.059-4.238a6.273 6.273 0 00-.37-1.953 3.566 3.566 0 00-1.993-1.992 6.27 6.27 0 00-1.953-.371c-1.094-.04-2.507-.059-4.239-.059zm0 12.577c1.094 0 2.028-.387 2.803-1.162.775-.774 1.162-1.709 1.162-2.803 0-1.093-.387-2.028-1.162-2.802-.774-.775-1.709-1.162-2.803-1.162-1.093 0-2.028.387-2.802 1.162-.775.774-1.162 1.709-1.162 2.802 0 1.094.387 2.028 1.162 2.803.774.775 1.709 1.162 2.802 1.162zm0-9.043c1.407 0 2.605.495 3.594 1.485.99.99 1.485 2.187 1.485 3.593 0 1.407-.495 2.605-1.485 3.594-.99.99-2.187 1.485-3.594 1.485-1.406 0-2.604-.495-3.593-1.485-.99-.99-1.485-2.187-1.485-3.594 0-1.406.495-2.604 1.485-3.593.99-.99 2.187-1.485 3.593-1.485zm6.485-.195c0 .326-.117.602-.352.83-.234.228-.52.342-.86.342a1.13 1.13 0 01-.83-.342 1.13 1.13 0 01-.341-.83c0-.339.114-.625.342-.86.228-.234.504-.35.83-.35.325 0 .609.12.85.36.24.241.36.525.36.85z"/>
                   </symbol>
                   <use xlink:href="#social__link--sprite">
-
                   </use>
                 </svg>
 
@@ -231,12 +229,9 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link-fb" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
-                <svg class="social__link-fb--icon" width="22" height="22">
-                  <symbol id="social__link--sprite-fb" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 22 22">
-                    <path
-                      d="M16.5 1.83h-2.75c-1.22 0-2.38.48-3.24 1.32a4.45 4.45 0 00-1.34 3.18v2.7H6.42v3.59h2.75v7.19h3.66v-7.2h2.75l.92-3.59h-3.67v-2.7c0-.23.1-.46.27-.63.17-.17.4-.26.65-.26h2.75v-3.6z"
-                      stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
+                <svg class="social__link-fb social__link-fb--icon" width="22" height="22">
+                  <symbol id="social__link--sprite-fb" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22">
+                    <path  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1" d="M16.5 1.833h-2.75a4.63 4.63 0 00-3.24 1.317 4.45 4.45 0 00-1.343 3.177v2.697h-2.75v3.595h2.75v7.191h3.666v-7.19h2.75l.917-3.596h-3.667V6.327a.89.89 0 01.269-.635.926.926 0 01.648-.263h2.75V1.833z"/>
                   </symbol>
                   <use xlink:href="#social__link--sprite-fb">
                   </use>
