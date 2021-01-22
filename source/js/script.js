@@ -1,6 +1,8 @@
 "use-strict";
 var menuToggle = document.querySelector(".page-header__wrapper-toggle");
 var nav = document.querySelector(".main-nav__list");
+nav.classList.add("site-list--shadow");
+menuToggle.classList.add("page-header__wrapper-toggle--show");
 menuToggle.addEventListener("click", function() {
   if (nav.classList.contains("site-list--shadow")) {
     nav.classList.remove("site-list--shadow");
