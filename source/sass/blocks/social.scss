@@ -55,6 +55,7 @@
 }
 
 .social__link {
+  outline: none;
   text-decoration: none;
 
   &-fb {
@@ -65,13 +66,20 @@
     }
   }
 
-  &:hover {
-    stroke: $green;
+  &-vk {
+    &:hover {
+      fill: $green;
+    }
+  }
+
+  &-instagram {
+    &:hover {
+      fill: $green;
+    }
   }
 
   &:active {
     opacity: 0.3;
-    stroke: $green;
   }
 }
 

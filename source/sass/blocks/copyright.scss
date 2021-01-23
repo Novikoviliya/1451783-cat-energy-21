@@ -24,26 +24,17 @@
 .copyright__logo {
   margin-top: -7px;
   margin-left: 140px;
+  outline: none;
+  text-decoration: none;
 
   &-icon {
-    stroke: $color-stroke-fb;
-
     &:hover {
-      stroke: $green;
+      fill: $green;
     }
-
-    &:active {
-      stroke: $green;
-    }
-  }
-
-  &:hover {
-    stroke: $green;
   }
 
   &:active {
     opacity: 0.3;
-    stroke: $green;
   }
 }
 
