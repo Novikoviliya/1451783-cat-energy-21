@@ -39,3 +39,8 @@ img {
 *::after {
   box-sizing: border-box;
 }
+
+table{
+  border-spacing: 0;
+  border-collapse: collapse;
+}
