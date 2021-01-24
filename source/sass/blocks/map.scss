@@ -46,6 +46,10 @@
   .map {
     width: 100%;
 
+    &--toggle {
+      margin-top: 0;
+    }
+
     &--color {
       margin-top: 54px;
     }

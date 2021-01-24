@@ -16,6 +16,7 @@
   font-size: 36px;
   line-height: 36px;
   color: $color-black;
+  text-align: center;
 
   @media (max-width: 767px) {
     &::before {
@@ -36,7 +37,7 @@
   }
 
   .page-catalog__title {
-    padding-top: 34px;
+    padding-top: 33px;
     padding-bottom: 84px;
     padding-right: 278px;
     font-style: normal;
@@ -52,8 +53,8 @@
   }
 
   .page-catalog__title {
-    padding-top: 19px;
-    text-align: left;
-    margin-right: 510px;
+    padding-top: 18px;
+    text-align: center;
+    margin-right: 513px;
   }
 }

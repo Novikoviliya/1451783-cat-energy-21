@@ -1,5 +1,6 @@
 .form__field {
   padding-bottom: 15px;
+  position: relative;
 
   @media (max-width: 767px) {
     &-position {
@@ -40,8 +41,8 @@
   &-color {
     &--icon {
       position: absolute;
-      right: 36px;
-      bottom: 75px;
+      right: 14px;
+      bottom: 18px;
       stroke: $color-stroke;
 
       &:hover {
@@ -51,8 +52,8 @@
 
     &--phone {
       position: absolute;
-      right: 33px;
-      bottom: 13px;
+      right: 13px;
+      bottom: 16px;
     }
   }
 
@@ -92,7 +93,7 @@
   &--line::before {
     content: "";
     position: absolute;
-    top: 68px;
+    top: 67px;
     right: 0;
     width: 31%;
     border-bottom: 2px solid $green;
@@ -101,7 +102,7 @@
   &--bar::before {
     content: "";
     position: absolute;
-    top: 36px;
+    top: 35px;
     right: 0;
     width: 49%;
     border-bottom: 2px solid $green;
@@ -110,7 +111,7 @@
   &--stripe::before {
     content: "";
     position: absolute;
-    top: 38px;
+    top: 37px;
     right: 0;
     width: 42%;
     border-bottom: 2px solid $green;
@@ -313,7 +314,7 @@
     font-size: 20px;
     line-height: 30px;
     padding-top: 16px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
     padding-left: 88px;
 
     &-radio + ::before {
@@ -430,13 +431,13 @@
   .form__control {
     &-color {
       &--icon {
-        right: 85px;
-        bottom: 90px;
+        right: 19px;
+        bottom: 26px;
       }
 
       &--phone {
-        right: 83px;
-        bottom: 14px;
+        right: 17px;
+        bottom: 23px;
       }
     }
   }
@@ -451,7 +452,7 @@
   }
 
   .form__type {
-    padding-top: 15px;
+    padding-top: 14px;
     padding-left: 87px;
 
     &-position {
@@ -527,28 +528,26 @@
     width: 486px;
     height: 52px;
     margin-top: 9px;
-    margin-left: 17px;
-    padding-left: 18px;
+    margin-left: 16px;
+    padding-left: 19px;
   }
 
   .form__control-number {
     width: 472px;
     height: 52px;
-    margin-left: 14px;
-    padding-left: 17px;
+    margin-left: 13px;
+    padding-left: 18px;
     padding-top: 0;
   }
 
   .form__control {
     &-color {
       &--icon {
-        right: 779px;
-        bottom: 85px;
+        right: 17px;
       }
 
       &--phone {
-        right: 127px;
-        bottom: 82px;
+        right: 16px;
       }
     }
   }

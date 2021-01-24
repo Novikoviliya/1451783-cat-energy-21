@@ -6,7 +6,6 @@ const autoprefixer = require("autoprefixer");
 const sass = require("gulp-sass");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
-const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
@@ -32,14 +31,6 @@ const styles = () => {
 }
 
 exports.styles = styles;
-
-// HTML
-
-const html = () => {
-  return gulp.src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("build"));
-}
 
 // Scripts
 
@@ -133,6 +124,12 @@ const reload = done => {
   done();
 }
 
+// HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"));
+}
 // Watcher
 
 const watcher = () => {

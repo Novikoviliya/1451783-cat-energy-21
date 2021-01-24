@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -50,16 +52,19 @@
   </header>
   <main class="page-catalog">
     <div class="page-catalog__position">
-      <div class="page-catalog__wrapper container">
+      <div class="page-catalog__wrapper">
         <h1 class="page-catalog__title page-catalog__title--line">Каталог продукции</h1>
       </div>
       <section class="product-catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="product-catalog__list">
           <li class="product-catalog__item">
-            <article class="product container">
+            <article class="product product__position">
               <a class="product__image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-desktop@1x.webp 1x, img/catalog-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-desktop@1x.webp 1x, img/catalog-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog-desktop@1x.webp 1x, img/catalog-desktop@2x.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog-desktop@1x.png, img/catalog-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog-tablet@1x.png, img/catalog-tablet@2x.png 2x">
@@ -97,10 +102,12 @@
             </article>
           </li>
           <li class="product-catalog__item">
-            <article class="product container">
+            <article class="product product__position">
               <a class="product__image">
                 <picture>
-
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-1-desktop@1x.webp 1x, img/catalog-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-1-desktop@1x.webp 1x, img/catalog-1-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog-1-desktop@1x.webp 1x, img/catalog-1-desktop@2x.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog-1-desktop@1x.png, img/catalog-1-desktop@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -139,9 +146,12 @@
             </article>
           </li>
           <li class="product-catalog__item">
-            <article class="product container">
+            <article class="product product__position">
               <a class="product__image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-2-desktop@1x.webp 1x, img/catalog-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-2-desktop@1x.webp 1x, img/catalog-2-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog-2-desktop@1x.webp 1x, img/catalog-2-desktop@2x.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog-2-desktop@1x.png, img/catalog-2-desktop@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -179,9 +189,12 @@
             </article>
           </li>
           <li class="product-catalog__item">
-            <article class="product container">
+            <article class="product product__position">
               <a class="product__image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-3-desktop@1x.webp 1x, img/catalog-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-3-desktop@1x.webp 1x, img/catalog-3-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog-3-desktop@1x.webp 1x, img/catalog-3-desktop@2x.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog-3-desktop@1x.png, img/catalog-3-desktop@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -219,14 +232,17 @@
             </article>
           </li>
           <li class="product-catalog__item">
-            <article class="product container">
+            <article class="product product__position">
               <a class="product__image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-4-desktop@1x.webp 1x, img/catalog-4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-4-desktop@1x.webp 1x, img/catalog-4-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog-4-desktop@1x.webp 1x, img/catalog-4-desktop@2x.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog-4-desktop@1x.png, img/catalog-4-desktop@2x.png 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog-4-tablet@1x.png, img/catalog-4-tablet@2x.png 2x">
-                  <img class="product__image-small product__image-small--geo" src="img/catalog-4-mobile@1x.png"
+                  <img class="product__image-small product__image-small--geo" src="img/catalog-4-mobile@1x.png" srcset="img/catalog-4-mobile@2x.png 2x"
                     alt="Cat Energy">
                 </picture>
               </a>
@@ -259,9 +275,12 @@
             </article>
           </li>
           <li class="product-catalog__item">
-            <article class="product container">
+            <article class="product product__position">
               <a class="product__image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-5-desktop@1x.webp 1x, img/catalog-5-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-5-desktop@1x.webp 1x, img/catalog-5-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog-5-desktop@1x.webp 1x, img/catalog-5-desktop@2x.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog-5-desktop@1x.png, img/catalog-5-desktop@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -299,9 +318,12 @@
             </article>
           </li>
           <li class="product-catalog__item">
-            <article class="product container">
+            <article class="product product__position">
               <a class="product__image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog-6-desktop@1x.webp 1x, img/catalog-6-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-6-desktop@1x.webp 1x, img/catalog-6-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog-6-desktop@1x.webp 1x, img/catalog-6-desktop@2x.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog-6-desktop@1x.png, img/catalog-6-desktop@2x.png 2x">
                   <source media="(min-width: 768px)"
@@ -363,7 +385,7 @@
             <li class="additional-goods__item">
               <article class="item-card">
                 <h3 class="item-card__name">Сахарозаменитель</h3>
-                <table class="item-card___info">
+                <table cellspacing="0" class="item-card___info">
                   <tbody>
                     <tr class="item-card__info-name">
                       <td class="item-card__info-value">1 упаковка (100 г)</td>
@@ -379,7 +401,7 @@
             <li class="additional-goods__item">
               <article class="item-card">
                 <h3 class="item-card__name">питьевая вода</h3>
-                <table class="item-card___info">
+                <table cellspacing="0" class="item-card___info">
                   <tbody>
                     <tr class="item-card__info-name">
                       <td class="item-card__info-value">5 литров</td>
@@ -395,7 +417,7 @@
             <li class="additional-goods__item">
               <article class="item-card">
                 <h3 class="item-card__name">молоко</h3>
-                <table class="item-card___info">
+                <table cellspacing="0" class="item-card___info">
                   <tbody>
                     <tr class="item-card__info-name">
                       <td class="item-card__info-value">1 литр</td>
@@ -410,7 +432,7 @@
             <li class="additional-goods__item">
               <article class="item-card">
                 <h3 class="item-card__name">витамины</h3>
-                <table class="item-card___info">
+                <table cellspacing="0" class="item-card___info">
                   <tbody>
                     <tr class="item-card__info-name">
                       <td class="item-card__info-value">1 упаковка (30 г)</td>

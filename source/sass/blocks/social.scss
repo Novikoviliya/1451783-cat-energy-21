@@ -31,8 +31,7 @@
   padding: 0;
   list-style: none;
   padding-bottom: 48px;
-  padding-left: 0;
-  padding-top: 50px;
+  padding-top: 49px;
   width: 130px;
 }
 
@@ -41,11 +40,12 @@
   padding: 0 18px;
 
   &:first-child {
-    padding-left: 13px;
+    padding-left: 12px;
   }
 
   &:nth-child(2) {
-    margin-top: 2px;
+    padding-left: 16px;
+    margin-top: 3px;
   }
 
   &:last-child {
@@ -59,6 +59,8 @@
   text-decoration: none;
 
   &-fb {
+    width: 22px;
+    height: 22px;
     stroke: $color-stroke-fb;
 
     &:hover {
@@ -67,12 +69,18 @@
   }
 
   &-vk {
+    width: 27px;
+    height: 17px;
+
     &:hover {
       fill: $green;
     }
   }
 
   &-instagram {
+    width: 16px;
+    height: 16px;
+
     &:hover {
       fill: $green;
     }
@@ -86,7 +94,7 @@
 @media (min-width: $tablet-width) {
   .social__list {
     padding: 0;
-    margin-top: 52px;
+    margin-top: 48px;
     margin-left: 20px;
   }
 
@@ -102,7 +110,7 @@
     }
 
     &-vk--icon {
-      width: 28px;
+      width: 30px;
       height: 22px;
     }
   }
@@ -112,19 +120,16 @@
     padding: 0;
 
     &:first-child {
-      padding-left: 0;
-      margin-right: 7px;
-      margin-left: 16px;
+      padding-right: 21px;
+      padding-left: 4px;
     }
 
     &:nth-child(2) {
-      margin-left: 21px;
+      padding-left: 5px;
     }
 
     &:last-child {
-      margin-left: 20px;
-      padding-left: 0;
-      margin-right: 12px;
+      margin-left: 9px;
     }
   }
 }
@@ -132,13 +137,23 @@
 @media (min-width: $desktop-width) {
   .social__list {
     padding: 0;
-    margin-top: 41px;
+    margin-top: 45px;
     margin-left: 57px;
   }
 
   .social__item {
+    &:first-child {
+      padding-right: 22px;
+      padding-left: 5px;
+    }
+
     &:nth-child(2) {
-      margin-left: 19px;
+      padding-left: 5px;
+      margin-top: 4px;
+    }
+
+    &:last-child {
+      margin-left: 8px;
     }
   }
 }

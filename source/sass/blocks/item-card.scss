@@ -8,6 +8,10 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $color-special-dark-balck;
+
+  &:first-child {
+    padding-bottom: 14px;
+  }
 }
 
 .item-card {
@@ -16,12 +20,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 14px;
-  margin-bottom: 17px;
-}
-
-.item-card__info {
-  border-collapse: collapse;
-  border-spacing: 0;
+  margin-bottom: 16px;
 }
 
 .item-card__info-name {
@@ -75,7 +74,7 @@
     height: 38px;
     font-size: 16px;
     line-height: 0;
-    margin-top: 14px;
+    margin-top: 13px;
     padding-top: 19px;
   }
 
@@ -91,7 +90,7 @@
   }
 
   .item-card___info {
-    width: 285px;
+    width: 286px;
   }
 
   .item-card__info-name {

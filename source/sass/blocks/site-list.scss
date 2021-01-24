@@ -1,8 +1,8 @@
 .site-list__link {
   position: relative;
   display: block;
-  padding-top: 23px;
-  padding-bottom: 22px;
+  padding-top: 21px;
+  padding-bottom: 23px;
   border-top: 1px solid $color-line-gray;
   color: $color-black;
   text-decoration: none;
@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 19px 0;
+    padding: 20px 0;
     padding-left: 13px;
   }
 
@@ -64,7 +64,7 @@
     &--active-line::before {
       content: "";
       position: absolute;
-      top: 53px;
+      top: 52px;
       left: 17px;
       width: 154px;
       border-bottom: 2px solid $green;
@@ -73,7 +73,7 @@
     &--active-stripe::before {
       content: "";
       position: absolute;
-      top: 53px;
+      top: 52px;
       left: 20px;
       width: 154px;
       border-bottom: 2px solid $green;
@@ -90,6 +90,7 @@
 @media (min-width: $desktop-width) {
   .site-list {
     padding: 14px 80px;
+    padding-top: 16px;
   }
 
   .site-list__item {
@@ -108,21 +109,21 @@
     }
 
     &--active::before {
-      top: 58px;
+      top: 56px;
       left: 20px;
       width: 68px;
       border-bottom: 2px solid $color-white;
     }
 
     &--active-line::before {
-      top: 59px;
+      top: 57px;
       left: 18px;
       width: 168px;
       border-bottom: 2px solid $green;
     }
 
     &--active-stripe::before {
-      top: 60px;
+      top: 57px;
       left: 18px;
       width: 170px;
       border-bottom: 2px solid $green;
