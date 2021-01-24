@@ -3,11 +3,13 @@
   display: block;
   padding-top: 21px;
   padding-bottom: 23px;
-  border-top: 1px solid $color-line-gray;
   color: $color-black;
   text-decoration: none;
-
+  border-top: 1px solid $color-line-gray;
   @media (max-width: 767px) {
+    &--position{
+      padding-bottom: 24px;
+    }
     &--color-line {
       border-bottom: 1px solid $color-line-gray;
     }
