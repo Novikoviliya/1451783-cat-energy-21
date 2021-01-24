@@ -6,10 +6,12 @@
   color: $color-black;
   text-decoration: none;
   border-top: 1px solid $color-line-gray;
+
   @media (max-width: 767px) {
-    &--position{
+    &--position {
       padding-bottom: 24px;
     }
+
     &--color-line {
       border-bottom: 1px solid $color-line-gray;
     }
